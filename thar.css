@@ -1,0 +1,70 @@
+.modelNav.gssticky{
+    background: black;
+    position: sticky !important;
+    top: 0;
+    z-index: 2500;
+}
+.modelNav{
+    box-shadow: 0 6px 10px 0 rgba(36, 39, 44 , 0.5);
+    width:100%;
+    will-change: top;
+}
+html{
+    color: rgba(36, 39,44, 0.7);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+body,html{
+    font-family: Sans-Serif,Arial, Helvetica, sans-serif;
+}
+.Navdiv ul{
+    white-space: nowrap;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+:after,:before{
+    box-sizing: border-box;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: lem;
+    margin-block-end: lem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+.Navdiv li{
+    display: inline-block;
+    padding-right: 33px;
+    position: relative;
+}
+li{
+    list-style: none;
+}
+.modelNav.gssticky .Navdiv li span.active{
+    color: #fff;
+}
+.Navdiv li span.active {
+    border-bottom: 3px solid #f75d34;
+    padding-bottom: 13px;
+}
+.modelNav li span{
+    display: inline-block;
+    font-size:  14px;
+    font-weight: 500;
+    padding: 16px 0;
+    text-transform: uppercase;
+}
+
