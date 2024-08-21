@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +53,7 @@
     background-color: #e68a00;
 }
 
-.hero {
+.main {
     background-image: url('https://wallpapercave.com/wp/wp10564189.jpg');
     background-size: cover;
     background-position: center;
@@ -66,12 +65,12 @@
     text-align: center;
 }
 
-.hero h1 {
+.main h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.main p {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -193,59 +192,59 @@
 
 
 @media (max-width: 1024px) {
-    .hero {
+    .main {
         height: 500px;
     }
     
-    .hero h1 {
+    .main h1 {
         font-size: 40px;
     }
 
-    .hero p {
+    .main p {
         font-size: 18px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 12px 25px;
         font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .main {
         height: 400px;
         padding: 15px;
     }
 
-    .hero h1 {
+    .main h1 {
         font-size: 32px;
     }
 
-    .hero p {
+    .main p {
         font-size: 16px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 10px 20px;
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero {
+    .main {
         height: 350px;
         padding: 10px;
     }
 
-    .hero h1 {
+    .main h1 {
         font-size: 28px;
     }
 
-    .hero p {
+    .main p {
         font-size: 14px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 8px 18px;
         font-size: 12px;
     }
