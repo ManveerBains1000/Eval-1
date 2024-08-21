@@ -53,8 +53,8 @@
     background-color: #e68a00;
 }
 
-.hero {
-    background-image: url('https://wallpapercave.com/wp/wp10564189.jpg');
+.main {
+    background-image: url('https://www.team-bhp.com/forum/attachments/official-new-car-reviews/2642758d1723832110t-mahindra-thar-roxx-review-2024_mahindra_tharroxx_exterior_01.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -65,12 +65,12 @@
     text-align: center;
 }
 
-.hero h1 {
+.main h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.main p {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -190,169 +190,61 @@
     color: #fff;
 }
 
-.hero {
-    background-image: url('https://wallpapercave.com/wp/wp10564189.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    position: relative;
-}
-
-.hero::before {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-}
-
-.hero-content {
-    position: relative; 
-    z-index: 1;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #ff9800;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero .btn:hover {
-    background-color: #e68a00;
-}
-
-
-
-
-.hero {
-    background-image: url('https://stimg.cardekho.com/images/cms/carnewsimages/editorimages/669b962bd9b1b.JPG'); 
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    padding: 20px; 
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay for better readability */
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #ff9800;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero .btn:hover {
-    background-color: #e68a00;
-}
-
 
 @media (max-width: 1024px) {
-    .hero {
+    .main {
         height: 500px;
     }
     
-    .hero h1 {
+    .main h1 {
         font-size: 40px;
     }
 
-    .hero p {
+    .main p {
         font-size: 18px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 12px 25px;
         font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .main {
         height: 400px;
         padding: 15px;
     }
 
-    .hero h1 {
+    .main h1 {
         font-size: 32px;
     }
 
-    .hero p {
+    .main p {
         font-size: 16px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 10px 20px;
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero {
+    .main {
         height: 350px;
         padding: 10px;
     }
 
-    .hero h1 {
+    .main h1 {
         font-size: 28px;
     }
 
-    .hero p {
+    .main p {
         font-size: 14px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 8px 18px;
         font-size: 12px;
     }
