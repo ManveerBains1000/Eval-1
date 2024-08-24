@@ -1,11 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out; 
 }
-
 
 .navbar {
     display: flex;
@@ -13,6 +12,12 @@
     align-items: center;
     padding: 20px;
     background-color: #333;
+    animation: slideDown 0.5s ease-in-out; 
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
 }
 
 .navbar .logo {
@@ -34,10 +39,23 @@
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    position: relative;
 }
 
-.nav-links a:hover {
-    color: #ff9800;
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff9800;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .btn {
@@ -48,13 +66,15 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background-color: #e68a00;
+    transform: scale(1.05); 
 }
 
-.hero {
+.main {
     background-image: url('https://wallpapercave.com/wp/wp10564189.jpg');
     background-size: cover;
     background-position: center;
@@ -64,18 +84,23 @@
     align-items: center;
     color: #fff;
     text-align: center;
+    animation: fadeIn 1s ease-in-out; 
 }
 
-.hero h1 {
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.main h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.main p {
     font-size: 20px;
     margin-bottom: 20px;
 }
-
 
 .car-gallery {
     padding: 50px 20px;
@@ -86,6 +111,12 @@
 .car-gallery h2 {
     margin-bottom: 40px;
     font-size: 32px;
+    animation: fadeInUp 0.5s ease-in-out; 
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .gallery-grid {
@@ -98,6 +129,13 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8;
 }
 
 .car-details {
@@ -109,6 +147,7 @@
     text-align: center;
     margin-bottom: 40px;
     font-size: 32px;
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 .details-grid {
@@ -133,6 +172,7 @@
 .reviews h2 {
     margin-bottom: 40px;
     font-size: 32px;
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 .review-card {
@@ -141,18 +181,13 @@
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.review-card p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.review-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
-
-.review-card span {
-    font-style: italic;
-    color: #555;
-}
-
 
 .booking {
     padding: 50px 20px;
@@ -163,6 +198,7 @@
 .booking h2 {
     margin-bottom: 40px;
     font-size: 32px;
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 .booking form {
@@ -183,104 +219,105 @@
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.booking form input:focus {
+    border-color: #ff9800;
 }
 
 .booking form button {
     padding: 10px;
     background-color: #ff9800;
     color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.booking form button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out; 
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
 
 @media (max-width: 1024px) {
-    .hero {
+    .main {
         height: 500px;
     }
     
-    .hero h1 {
+    .main h1 {
         font-size: 40px;
     }
 
-    .hero p {
+    .main p {
         font-size: 18px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 12px 25px;
         font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .main {
         height: 400px;
         padding: 15px;
     }
 
-    .hero h1 {
+    .main h1 {
         font-size: 32px;
     }
 
-    .hero p {
+    .main p {
         font-size: 16px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 10px 20px;
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero {
+    .main {
         height: 350px;
         padding: 10px;
     }
 
-    .hero h1 {
+    .main h1 {
         font-size: 28px;
     }
 
-    .hero p {
+    .main p {
         font-size: 14px;
     }
 
-    .hero .btn {
+    .main .btn {
         padding: 8px 18px;
         font-size: 12px;
     }
-}
-
-.hover-image:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.image-section {
-    text-align: center;
-    margin: 50px 0;
-}
-
-.hover-image {
-    width: 200px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-}
-
-.hover-image:hover {
-    transform: scale(1.1); 
-    opacity: 0.8; 
-
-@media (max-width: 768px) {
-    .hover-image {
-        width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hover-image {
-        width: 120px;
-    }
-}
 }
