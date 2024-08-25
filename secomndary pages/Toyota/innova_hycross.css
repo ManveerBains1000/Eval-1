@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    transition: all 0.3s ease-in-out; /* Smooth transitions for all elements */
+    transition: all 0.3s ease-in-out; 
 }
 
 .navbar {
@@ -12,7 +12,7 @@
     align-items: center;
     padding: 20px;
     background-color: #333;
-    animation: slideDown 0.5s ease-in-out; /* Navbar slides down on load */
+    animation: slideDown 0.5s ease-in-out; 
 }
 
 @keyframes slideDown {
@@ -71,11 +71,11 @@
 
 .btn:hover {
     background-color: #e68a00;
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    transform: scale(1.05); 
 }
 
 .main {
-    background-image: url('https://imgd.aeplcdn.com/370x208/n/cw/ec/132269/mahindra-scorpio-front-view28.jpeg?isig=0&wm=1&q=80');
+    background-image: url('https://i.ytimg.com/vi/sTg7hcebC2A/maxresdefault.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -84,7 +84,7 @@
     align-items: center;
     color: #fff;
     text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect for the main section */
+    animation: fadeIn 1s ease-in-out; 
 }
 
 @keyframes fadeIn {
@@ -111,7 +111,7 @@
 .car-gallery h2 {
     margin-bottom: 40px;
     font-size: 32px;
-    animation: fadeInUp 0.5s ease-in-out; /* Fade-in and slide-up effect */
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 @keyframes fadeInUp {
@@ -134,7 +134,7 @@
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.1); /* Enlarges the image on hover */
+    transform: scale(1.1); 
     opacity: 0.8;
 }
 
@@ -185,7 +185,7 @@
 }
 
 .review-card:hover {
-    transform: translateY(-5px); /* Lift the card slightly on hover */
+    transform: translateY(-5px); 
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -243,8 +243,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    animation: slideUp 0.5s ease-in-out; /* Footer slides up on load */
-}
+    animation: slideUp 0.5s ease-in-out; 
 
 @keyframes slideUp {
     from { transform: translateY(100%); }
@@ -320,4 +319,5 @@ footer {
         padding: 8px 18px;
         font-size: 12px;
     }
+}
 }
