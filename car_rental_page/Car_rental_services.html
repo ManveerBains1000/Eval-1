@@ -4,79 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car rental</title>
-    <link rel="stylesheet" href="rental_services.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="Car_rental_services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
-    <div id="main">
-        <header>
-            <div id="navigation-bar">
-                <div class="items">
-                    <div><i class="ri-car-fill"></i></div>
-                    <div><b>Rental Car <br>Service</b></div>
-                </div>
-                <div class="items">
-                    <div><i class="ri-earth-fill"></i></div>
-                    <div><span>Haryana</span>
-                        <span>Shahabad,Haryana</span>
-                    </div>
-                </div>
-                <div class="items"></div>
-                <div class="items"></div>
+    <header>
+        <!-- <div class="navbar">
+            <ul class="links">
+                <li><a href="#"><i class="fa-solid fa-envelope" style="color: #d75737;"></i> info@example.com</a></li>
+                <li><a><i class="fa-solid fa-location-dot" style="color: #ce603b;"></i> 88 Broklyn Golden Street. New
+                        York
+                    </a></li>
+            </ul>
+            <ul class="links HSC">
+                <li><a href="../main page/mainpage.html">Home</a></li>
+                <li><a>/</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a>/</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="links">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div> -->
+        <div class="navbar2">
+            <div class="logo">CarBrand</div>
+            <ul class="links2">
+                <li><a href="../main page/mainpage.html">Home</a></li>
+                <li><a href="#">New Cars</a></li>
+                <li><a href="#">Rental Cars</a></li>
+                <li><a href="#">Car Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="search_sh"><input type="search" id="search" placeholder="search">
+                <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
-            <div id="nav-navigation">
-                <div class="nav-icons">
-                    <div class="icons"><a href="">Home</a></div>
-                    <div class="icons"><a href="">About</a></div>
-                    <div class="icons"><a href="">Cars</a></div>
-                    <div class="icons"><a href="">Blog</a></div>
-                    <div class="icons"><a href="">Contact</a></div>
-                </div>
-                <div class="search-box">
-                    <button class="btn-search">
-                        <i class="ri-search-line"></i>
-                    </button>
-                    <input type="text" class="input-search" placeholder="Type to Search...">
-                </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </header>
+            <div class="login_lg">
+                <i class="fa-solid fa-user"></i>
+                <a href="/../login_page/signin_form.html">Login / Signup</a>
+            </div>
+        </div>
+    </header>
+    <main>
         <div id="container">
-            <div class="box1">
-                <div class="box-header">
-                    <h1><span>Looking</span> to <br> rent a car</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Necessitatibus nisi, modi quasi qui at excepturi. Accusantium </p>
-                </div>
-                <div class="box-form">
-                    <form action="">
-                        <div class="fields">
-                            <div class="input-box">
-                                <label for="location">Location</label>
-                                <input type="text" name="location" id="location" placeholder="Search Places">
-                            </div>
-                            <div class="input-box">
-                                <label for="pu-d">Pick-up Date</label>
-                                <input type="date" name="pu-d" id="pu-d">
-                            </div>
-                            <div class="input-box">
-                                <label for="r-d">Return</label>
-                                <input type="date" name="r-d" id="r-d">
-                            </div>
-                            <div class="submit-btn">
-                                <button>Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="fade-black"></div>
+            <div class="box-header">
+                <div class="rent-car">Rent A Car</div>
+                <h1>Best Rental <span>Cars</span> <br>In Your Location</h1>
+                <div class="submit-btn">Reserve Now</div>
             </div>
-            <div class="box2" >
-                <img src="assets/img/car-png-39073.png" alt="bg-car">
+            <div class="box-form">
+                <form action="">
+                    <div class="fields">
+                        <div class="input-box">
+                            <label for="Selectcar-col">Select a Car</label> <br>
+                            <select name="Selectcaropt" id="Selectcar-col">
+                                <option value="1">car1</option>
+                                <option value="1">car1</option>
+                                <option value="1">car1</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" placeholder="Search Places">
+                        </div>
+                        <div class="input-box">
+                            <label for="pu-d">Pick-up Date</label>
+                            <input type="date" name="pu-d" id="pu-d">
+                        </div>
+                        <div class="input-box">
+                            <label for="r-d">Return</label>
+                            <input type="date" name="r-d" id="r-d">
+                        </div>
+                        <div class="submit-btn">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <div id="container2">
             <div id="container2-header">
-                <h1>Our Car Collections</h1>
+                <h1>Find Your Car </h1>
             </div>
             <div class="breaker"></div>
             <div id="carcollections-box">
@@ -217,7 +234,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
