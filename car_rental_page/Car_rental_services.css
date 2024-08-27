@@ -254,6 +254,7 @@ h1 span{
 }
 
 #container2{
+    margin-top: 50px;
     padding: 50px 50px;
     height: 100vh;
     width: 100%;
@@ -263,8 +264,8 @@ h1 span{
     background-color: #f8f8f8;
 }
 #container3{
-    padding:0px 50px; 
-    height: 100vh;
+    padding: 50px 50px; 
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -287,7 +288,7 @@ h1 span{
     border-left: 100px solid  #1C1E32;
 }
 #carcollections-box{
-    height: 80%;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -297,7 +298,7 @@ h1 span{
 .car-box{
     height: 90%;
     width: 20%;
-    background-color: #fff;
+    background-color: #F4F5F8;
     border-radius: 5px;
     padding: 10px 10px;
     display: flex;
@@ -320,6 +321,14 @@ h1 span{
 .inf{
     width: 100%;
     height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inf-col{
+    width: 30%;
+    border-right: 1px solid #1C1E32;
+    padding: 1px;
 }
 .car-image{
     height: 60%;
@@ -340,7 +349,7 @@ h1 span{
     height: fit-content;
 }
 .rent-btn button{
-    padding: 5px 8px;
+    padding: 10px 5px;
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -496,4 +505,77 @@ h1 span{
 .carimage-2 img{
     height: 100%;
     width: 100%;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 60px;
+    font-size: 14px;
+
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
+
+.footer .contact-info p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.footer .contact-info p strong {
+    color: #fff;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #bbb;
 }
