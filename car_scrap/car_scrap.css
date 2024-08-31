@@ -9,7 +9,7 @@ body{
     width: 100%;
 }
 section{
-    height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 a{
@@ -20,7 +20,6 @@ a{
 li{
     list-style: none;
 }
-
 /* header section */
 .navbar a {
     text-decoration: none;
@@ -156,7 +155,7 @@ header {
 /* main section */
 }
 #container{
-    height: 100vh;
+    height: max-content;
     background-image: linear-gradient(rgba(10, 10, 10,0.8) ,#2B2E4A 90%);
     display: flex;
     justify-content: space-around;
@@ -188,6 +187,9 @@ h1{
     color: #fff;
     margin-top: 20px;
     font-size: 0.9rem;
+}
+.container-content{
+    margin: 50px 0px;
 }
 .car-scrap-form form .fields{
     height: 50vh;
@@ -242,7 +244,7 @@ h1{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0.1px 0.1px 1px 0.1px #465166;
+    box-shadow: 0.1px 0.1px 6px 0.1px #465166;
     
 }
 .benefits-box span{
@@ -269,12 +271,12 @@ h1{
     align-items: center;
 }
 .about-scrap-header h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 .about-scrap-header p{
     color: #465166;
-    font-size: 0.9rem;
+    font-size: 1rem;
     height: fit-content;
 }
 .car-scrap-bg{
@@ -292,30 +294,61 @@ h1{
 #container3{
     width: 100%;
     height: 100vh;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 6% 5%;
+    background-color: #f5f5f5;
 }
 .container3-header{
     width: 100%;
+    margin-bottom: 40px;
+}
+.container3-header h2{
+    font-size: 2.2rem;
 }
 .scrap-steps-box{
     width: 100%;
     height: 50vh;
-    background-color: #ce603b;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0% 5%;
 }
 .car-scrap-steps{
-    width: 400px;
+    width: 500px;
     background-color: #fff;
-    height: 100px;
+    height: 120px;
     border-radius: 16px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 12px 0.1px #465166;
+}
+.scrap-steps-bg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scrap-steps-bg img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+.scrap-steps-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.scrap-steps-text h3{
+    color: #465166;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.scrap-steps-text p{
+    color: #465166;
+    font-size: 0.8rem;
 }
 /* footer section */
 .footer {
