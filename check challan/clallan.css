@@ -215,6 +215,10 @@ header {
     top: 20%;
     left: 5%;
 }
+.lines i{
+    font-size: 25px;
+    padding-right: 10px;
+}
 .lines p{
     font-size: 45px;
     font-weight: 900;
