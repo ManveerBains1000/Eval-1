@@ -430,7 +430,7 @@ header {
   .card {
     flex: 0 0 auto;
     display: inline-block;
-    width: 300px;
+    width: 275px;
     height: 370px;
     margin-inline: 5px;
     background-color: #ffffff;
