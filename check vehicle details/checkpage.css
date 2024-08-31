@@ -148,16 +148,16 @@ header {
 
 .hero_section{
     width: 100%;
-    height: 490px;
-    background-image: url('https://assets.cars24.com/production/c2b-website/240828164749/js/ea399292f3ce7839d4086cf934060f06.webp');
+    height: 660px;
+    background-image: url('https://assets.cars24.com/production/c2b-website/240830152555/js/6da22033e68461e3e1ef7f798070a38b.jpg');
 }
 .view{
-    width: 30%;
-    height: 320px;
+    width: 45%;
+    height: 230px;
     background-color: #ffffff;
     position: relative;
     top: -40%;
-    left: 62%;
+    left: 50%;
     border-radius: 30px;
     padding: 40px 30px;
 }
@@ -187,32 +187,13 @@ header {
     font-weight: 700;
     
 }
-.a{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(148, 148, 228, 0.798);
-    margin-top: 20px;
-    border-radius: 8px;
-    padding: 14px 0px;
-}
-.a1,.a2{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-.a1 p {
-    font-size: 19px;
-}
-.a2 p {
-    font-size: 19px;
-    
-}
+
 .lines{
     background-color: rgba(17, 115, 201, 0);
     width: 40%;
     padding: 20px;
     position: relative;
-    top: 20%;
+    top: 15%;
     left: 5%;
 }
 .lines i{
@@ -225,182 +206,33 @@ header {
     color: #ffffff;
 }
 .lines a{
-    font-size: 25px;
+    font-size: 22px;
     color: #ffffff;
-    font-weight: 900;
+    font-weight: 500;
 
 }
-
-/* how to pay section  */
-
-.how-to-pay h2{
-    padding: 100px 90px 20px 110px;
+.lines .rto{
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
-.main-pay{
-    padding: 30px 90px;
-   display: flex;
-   justify-content: space-evenly;
+.para{
+    padding: 100px 90px;
 }
-.pay1{
-    width: 31%;
-    aspect-ratio: 12/9;
-    background-image: url('https://assets.cars24.com/production/c2b-website/240830152555/js/9b2e26f1612ed31291234353037b0fa1.jpg') ;
-    background-size: 100%;
+.para .man{
+   font-size: 40px;
+   font-weight: 700;
 }
-
-.pay2{
-    width: 31%;
-    aspect-ratio: 12/9;
-    background-image: url('https://assets.cars24.com/production/c2b-website/240830152555/js/ba8f0e1b55f95a528bbdb113f82f773b.jpg');
-    background-size: 100%;
-
-}
-
-.pay3{
-    width: 31%;
-    aspect-ratio: 12/9;
-    background-image: url('https://assets.cars24.com/production/c2b-website/240830152555/js/1f1a65a49c3f580a582645818d9d9a44.jpg');
-    background-size: 100%;
-    border-radius: 12px;
-}
-
-.svp{
-    padding: 24px 17px;
-    width: 82%;
-    height: 144px;
-    background-color: #f8f8f8;
-    position: relative;
-    top: 70%;
-    left: 9%;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 15px;
-    box-shadow: 1px 1px 15px  rgb(231, 229, 229);
-}
-.svp .num{
-    background-color: #eff2f2;
-    padding: 10px 15px;
-    border-radius: 50%;
-}
-.num a{
-     font-size: 60px;
-     color: rgb(170, 235, 235);
-     font-weight: bold;
-}
-.svp .text{
-    padding: 15px 20px;
-    
-}
-.text p{
-    font-size: 21px;
-    font-weight: bold;
-    padding-bottom: 5px;
-}
-
-
-.what-is{
-    background-color: aliceblue;
-    margin: 110px;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-}
-.imb{
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 15px;
-}
-.tex{
-    padding: 30px;
-}
-.tex a{
-    font-size: 30px;
-    font-weight: 600;
-    padding-bottom: 15px;
-}
-.tex p{
-    text-align: justify;
-}
-
-.reasons h2{
-    padding-left: 110px;
-    padding-bottom: 50px;
-}
-
-.reas-boxes{
-    padding: 0px 110px;
-    display: flex;
-    justify-content: space-between;
-}
-.boxes{
-    width: 31%;
-    height: 120px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 1px 1px 3px 1px rgb(219, 218, 218);
-    border-radius: 15px;
-    margin-top: 10px;
-}
-.imbg{
-    padding: 15px 0px 15px 25px;
-}
-.txt{
-    width: 60%;
-    font-size: 20px;
-    font-weight: 600;
-    color: #959494;
-    padding-right: 20px;
-    padding-top: 35px;
-}
-
-
-
-.why-withus h2{
-    padding:70px 0px 50px 110px;
-   
-}
-
-.why{
-    padding: 0px 110px;
-    display: flex;
-    justify-content: space-between;
-}
-.ans{
-    width: 32%;
-    height: 200px;
-    background-color: rgb(241, 238, 238);
-    margin-bottom: 90px;
-    
-    box-shadow: 1px 1px 3px 1px rgb(184, 181, 181);
-    border-radius: 15px;
-    margin-top: 10px;
-}
-.im{
-    position: relative;
-    top: -20%;
-    left: 5%;
-}
-.tx{
-    width: 100%;
-    margin-top: -50px;
-    padding-top: 40px;
-    overflow: hidden;
-    padding: 30px;
-}
-.tx p{
+.para a{
     font-size: 25px;
-    font-weight: 600;
-    color: #302f2f;
+    font-weight: 700;
 }
-.tx a{
-   font-size: 18px;
+.para p{
+   font-size: 20px;
+   margin-top: 50px;
+   text-align: justify;
+   margin-bottom: 50px;
 }
-
-
-
-
-
 .footer {
     background-color: #333;
     color: white;
