@@ -396,11 +396,58 @@ header {
 .tx a{
    font-size: 18px;
 }
+#rr{
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 110px;
+}
+.want-to{
+    padding: 50px 110px 100px 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    width: 49%;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 5px rgb(228, 225, 225);
+    cursor: pointer;
+}
+.dm img{
+   width: 57%;
+   border-radius: 20px;
 
+}
+.dm{
+    padding: 47px 30px;
+}
+.ds{
+    margin-left: -160px;
+    margin-top: 47px;
+    padding-right: 30px;
+}
+.ds a{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.ds p{
+    font-size: 17px;
+    padding-top: 10px;
+}
+#pp{
+    padding-bottom: 25px;
+}
+.ds button{
+    font-size: 23px;
+    color: #d86a46;
 
-
-
-
+    margin-left: 170px;
+    border-style: none;
+    background-color: white;
+}
 .footer {
     background-color: #333;
     color: white;
