@@ -173,6 +173,20 @@ header {
     color: white;
     font-size: 4rem;
 }
+.text{
+    z-index: 2;
+}
+.text ul {
+    display: flex;
+    color: #fff;
+}
+.text ul li{
+    margin-left: 20px;
+}
+.text ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 .footer {
@@ -246,6 +260,7 @@ header {
     padding-top: 20px;
     color: #bbb;
 }
+
 #contact-container{
     background-color: #f8f8f8;;
     width: 100%;

@@ -15,7 +15,10 @@ li{
     color: white;
     font-size: 0.9rem;
 }
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 header {
     position: relative;
     
@@ -144,8 +147,6 @@ header {
     }
 
 }
-
-
 #container{
     height: 100vh;
     width: 100%;
@@ -156,6 +157,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
 .box-header{
     display: flex;
@@ -193,8 +195,7 @@ h1 span{
     padding: 10px 24px ;
 }
 .box-header .submit-btn:hover{
-    background: linear-gradient(orange ,#000 80%) ;
-    
+    transform: scale(1.1);
 }
 .rent-car{
     font-size: 1.5rem;
@@ -252,26 +253,33 @@ h1 span{
     border-radius: 2px;
     padding: 10px 5px;
 }
-
-#container2{
-    margin-top: 50px;
-    padding: 50px 50px;
-    height: 100vh;
+#car-cards-container{
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 50px;
     background-color: #f8f8f8;
 }
-#container3{
-    padding: 50px 50px; 
+
+.container2{
     height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 40px;
     background-color: #f8f8f8;
 }
+.container2 h2{
+    font-size: 2rem;
+    color:#2B2E4A;
+}
+.container2 h2{
+    font-size: 2rem;
+    color:#2B2E4A;
+}
+
 #container2-header{
     width: 100%;
     text-align: center;
@@ -297,14 +305,14 @@ h1 span{
 }
 .car-box{
     height: 90%;
-    width: 20%;
+    width: 22%;
     background-color: #F4F5F8;
     border-radius: 5px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
     transition-duration: 1.5s;
 }
 .car-box:hover{
@@ -393,7 +401,7 @@ h1 span{
 #container4 .box .details p{
     text-align: right;
     margin-bottom: 20px;
-    color: #fff;
+    color: #999;
 }
 #container4 .box .details h2{
     margin-bottom: 20px;
@@ -507,7 +515,122 @@ h1 span{
     width: 100%;
 }
 
-
+#container6{
+    height: 100vh;
+    width: 100%;
+    padding: 2% 5%;
+    background-color: #f8f8f8;
+}
+#container6-header{
+    margin-bottom: 20px;
+}
+#container6-header h2{
+    font-size: 2.5rem;
+}
+#container6-header h2 span{
+    color: #ce603b;
+}
+#cartype-contianer{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cartype-box{
+    width: 30%;
+    height: 60vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 2s;
+}
+.cartype-box:hover{
+    transform: scale(1.1);
+}
+.cartype-box h3{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 16px 20px;
+}
+#suv-car{
+    background-image: url("assets/img/suv-car.jpg");
+}
+#sedan-car{
+    background-image: url("assets/img/sedan-car.jpg");
+}
+#luxury-car{
+    background-image: url("assets/img/luxury_cars.jpg");
+}
+.cartype-no{
+    width: 80px;
+    height: 80px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    position: relative;
+    top: 240px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartype-no i{
+    font-size: 2rem;
+}
+#container7{
+    height: 80vh;
+    width: 100%;
+    padding: 2% 5%;
+    background-color: #f8f8f8;
+}
+#container7-header h2{
+    font-size: 2.5rem;
+}
+#container7-header h2 span{
+    color: #ce603b;
+}
+#rental-steps-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.rental-steps-box{
+    width: 30%;
+    height: 40vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 2%;
+    /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0,0.5); */
+    background-color: #1C1E32;
+}
+.rental-steps-box h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.rental-steps-box p{
+    color: #999;
+}
+#rental-steps-row{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 60px;
+    right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;;
+}
 .footer {
     background-color: #333;
     color: white;
