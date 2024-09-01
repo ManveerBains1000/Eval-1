@@ -147,8 +147,6 @@ header {
     }
 
 }
-
-
 #container{
     height: 100vh;
     width: 100%;
@@ -159,6 +157,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
 .box-header{
     display: flex;
@@ -264,7 +263,7 @@ h1 span{
     background-color: #f8f8f8;
 }
 
-#container2{
+.container2{
     height: 80vh;
     width: 100%;
     display: flex;
@@ -272,22 +271,15 @@ h1 span{
     margin-top: 40px;
     background-color: #f8f8f8;
 }
-#container2 h2{
+.container2 h2{
     font-size: 2rem;
     color:#2B2E4A;
 }
-#container3 h2{
+.container2 h2{
     font-size: 2rem;
     color:#2B2E4A;
 }
-#container3{
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f8f8;
-    margin-top: 40px;
-}
+
 #container2-header{
     width: 100%;
     text-align: center;
@@ -527,7 +519,7 @@ h1 span{
     height: 100vh;
     width: 100%;
     padding: 2% 5%;
-    background-color: #f8f8f8;;
+    background-color: #f8f8f8;
 }
 #container6-header{
     margin-bottom: 20px;
@@ -567,8 +559,23 @@ h1 span{
 #sedan-car{
     background-image: url("assets/img/sedan-car.jpg");
 }
-#small-car{
-    background-image: url("assets/img/small-car.jpg");
+#luxury-car{
+    background-image: url("assets/img/luxury_cars.jpg");
+}
+.cartype-no{
+    width: 80px;
+    height: 80px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    position: relative;
+    top: 240px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartype-no i{
+    font-size: 2rem;
 }
 #container7{
     height: 80vh;
