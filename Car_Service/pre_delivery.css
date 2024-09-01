@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    animation: slideDown 0.5s ease-in-out;
+}
+@keyframes slideDown {
+    from{transform: translateY(-100%);}
+    to{transform: translateY(0);}
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff9800;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f10e34;
+    transform: scale(1.05);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+
+.left-section {
+    width: 300px;
+    padding-top: 130px;
+    padding-left: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 750px;
+}
+
+.left-section h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.left-section p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 47, 108, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.feature .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.right-section {
+    width: 10%;
+    background-color: #f5f5f5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    margin-right: 50px;
+    margin-top: 130px;
+    padding-top: 0px;
+    border-radius: 20px;
+    height: 550px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.brand-selection {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.brand-selection p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brands img {
+    width: 70px;
+    height: auto;
+}
+
+.brands button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ff6600;
+    background-color: #fff;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left-section, .right-section {
+        width: 55%;
+    }
+
+    .right-section {
+        width: 40%;
+    }
+}
+.main{
+    background: url('https://assets.cars24.com/production/c2b-website/240830152555/js/01f936c366f75e6d6356583f4b514131.jpg') no-repeat center center/cover;
+}
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover img {
+    transform: scale(1.1);
+}
+.card h2 {
+    font-size: 1.2rem;
+    color: #002b5c;
+}
+
+.card p {
+    color: #333;
+}
+
+.reas-boxes{
+    padding: 0px 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxes{
+    width: 31%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 3px 1px rgb(219, 218, 218);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.imbg{
+    padding: 15px 0px 15px 25px;
+}
+.txt{
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #959494;
+    padding-right: 20px;
+    padding-top: 35px;
+}
+
+.mini{
+    padding-left: 110px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+.imbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    width: 100px; 
+    background-color: transparent;
+}
+
+.imbg i {
+    color: #333; 
+}
+.gray{
+    padding-bottom: 50px;
+    width: 100%;
+}
+.gray h2{
+    padding-left: 110px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-weight: 600;
+}
+.imug{
+    padding-top: 20px;
+    height: 120px;
+}
+.txtt{
+    color: black;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-top: 35px;
+}
+.S_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.S_section h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.S-card:hover {
+    transform: scale(1.2);
+}
+
+.S_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.S-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.S-card .quote {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.S-card .rating span {
+    font-size: 20px;
+    color: #f0a500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.customer-info {
+    margin-bottom: 20px;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-location {
+    font-size: 14px;
+    color: #999;
+}
+
+.S-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    right: 10px;
+    border: 3px solid #fff;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 60px;
+    font-size: 14px;
+    padding-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
+
+.footer .contact-info p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.footer .contact-info p strong {
+    color: #fff;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #bbb;
+}
+.main-3:hover .left-section {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+
+.main-3:hover .right-section {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
