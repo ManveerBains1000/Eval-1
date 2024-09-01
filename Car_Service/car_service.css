@@ -75,7 +75,7 @@
 }
 
 .main {
-    background-image: url("https://www.ridetime.ca/wp-content/uploads/2017/05/shutterstock_567460483.jpg");
+    background-image: url("https://media.istockphoto.com/id/1365436662/photo/successful-partnership.jpg?s=612x612&w=0&k=20&c=B1xspe9Q5WMsLc7Hc9clR8MWUL4bsK1MfUdDNVNR2Xg=");
     background-size: cover;
     background-repeat:no-repeat;
     color: white;
@@ -485,5 +485,72 @@ html {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+.S_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
 
+.S_section h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.S_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.S-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.S-card .quote {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.S-card .rating span {
+    font-size: 20px;
+    color: #f0a500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.customer-info {
+    margin-bottom: 20px;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-location {
+    font-size: 14px;
+    color: #999;
+}
+
+.S-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    right: 10px;
+    border: 3px solid #fff;
+}
 
