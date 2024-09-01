@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Arial', sans-serif;
 }
 header {
     position: relative;
@@ -153,7 +153,7 @@ header {
 }
 .view{
     width: 30%;
-    height: 320px;
+    height: 300px;
     background-color: #ffffff;
     position: relative;
     top: -40%;
@@ -161,13 +161,39 @@ header {
     border-radius: 30px;
     padding: 40px 30px;
 }
-.view input{
+/* .view input{
     font-size: 25px;
     font-weight: 900;
     width: 100%;
     margin-top: 13px;
     border-radius: 8px;
     padding: 10px;
+} */
+
+.view form label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.input-g {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.input-g .flag {
+    background-color: #e0e0e0;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-g input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    outline: none;
 }
 .vc{
     margin-top: 13px;
@@ -216,16 +242,16 @@ header {
     left: 5%;
 }
 .lines i{
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 10px;
 }
 .lines p{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 900;
     color: #ffffff;
 }
 .lines a{
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 900;
 

@@ -152,22 +152,40 @@ header {
     background-image: url('https://assets.cars24.com/production/c2b-website/240830152555/js/6da22033e68461e3e1ef7f798070a38b.jpg');
 }
 .view{
-    width: 45%;
-    height: 230px;
+    width: 30%;
+    height: 200px;
     background-color: #ffffff;
     position: relative;
     top: -40%;
-    left: 50%;
+    left: 62%;
     border-radius: 30px;
     padding: 40px 30px;
 }
-.view input{
-    font-size: 25px;
-    font-weight: 900;
-    width: 100%;
-    margin-top: 13px;
-    border-radius: 8px;
+
+.view form label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.input-g {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.input-g .flag {
+    background-color: #e0e0e0;
     padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-g input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    outline: none;
 }
 .vc{
     margin-top: 13px;
@@ -187,7 +205,6 @@ header {
     font-weight: 700;
     
 }
-
 .lines{
     background-color: rgba(17, 115, 201, 0);
     width: 40%;
