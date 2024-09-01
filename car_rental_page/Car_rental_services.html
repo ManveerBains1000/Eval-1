@@ -15,35 +15,15 @@
 
 <body>
     <header>
-        <!-- <div class="navbar">
-            <ul class="links">
-                <li><a href="#"><i class="fa-solid fa-envelope" style="color: #d75737;"></i> info@example.com</a></li>
-                <li><a><i class="fa-solid fa-location-dot" style="color: #ce603b;"></i> 88 Broklyn Golden Street. New
-                        York
-                    </a></li>
-            </ul>
-            <ul class="links HSC">
-                <li><a href="../main page/mainpage.html">Home</a></li>
-                <li><a>/</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a>/</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="links">
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div> -->
+
         <div class="navbar2">
             <div class="logo">CarBrand</div>
             <ul class="links2">
                 <li><a href="../main page/mainpage.html">Home</a></li>
                 <li><a href="#">New Cars</a></li>
-                <li><a href="#">Rental Cars</a></li>
+                <li><a href="Car_rental_services.html">Rental Cars</a></li>
                 <li><a href="#">Car Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="../contact_us/contact_us.html">Contact Us</a></li>
             </ul>
             <div class="search_sh"><input type="search" id="search" placeholder="search">
                 <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -95,11 +75,14 @@
                 </form>
             </div>
         </div>
+
+       <section id="car-cards-container">
+        <div id="container2-header">
+            <h1>Find Your Car </h1>
+        </div>
+        <div class="breaker"></div>
         <div id="container2">
-            <div id="container2-header">
-                <h1>Find Your Car </h1>
-            </div>
-            <div class="breaker"></div>
+            <h2>SUV Cars</h2>
             <div id="carcollections-box">
                 <div class="car-box">
                     <div class="car-image"><img src="assets/img/image_3.avif" alt=""></div>
@@ -188,6 +171,7 @@
             </div>
         </div>
         <div id="container3">
+            <h2>Sendan Cars</h2>
             <div id="carcollections-box">
                 <div class="car-box">
                     <div class="car-image"><img src="assets/img/image_3.avif" alt=""></div>
@@ -275,25 +259,65 @@
                 </div>
             </div>
         </div>
+    </section>
+        <div id="container6">
+            <div id="container6-header">
+                <h2>Rental <span> Car Types</span></h2>
+            </div>
+            <div id="cartype-contianer">
+                <div class="cartype-box" id="suv-car"><h3>SUV</h3></div>
+                <div class="cartype-box" id="sedan-car"><h3>Sedan</h3></div>
+                <div class="cartype-box" id="small-car"><h3>Small Cars</h3></div>
+            </div>
+        </div>
         <div id="container4">
             <div class="box" id="box1">
                 <div class="car-image"><img src="assets/img/image_7.png" alt=""></div>
                 <div class="details" style="align-items: flex-end;">
                     <h2>Want To Be Driver?</h2>
                     <p>Lorem ipsum dolor sit amet  <br> consectetur adipisicing elit. Sint, voluptatem!</p>
-                    <div><button>Start Now</button></div>
+                    <div><button><a href="Car_rental_services.html">Start Now</a></button></div>
                 </div>
             </div>
             <div class="box" id="box2">
                 <div class="details" >
                     <h2>Looking for a car?</h2>
                     <p style="text-align: left;">Lorem ipsum dolor sit amet  <br> consectetur adipisicing elit. Sint, voluptatem!</p>
-                    <div><button>Start Now</button></div>
+                    <div><button><a href="../main page/mainpage.html">Start Now</a></button></div>
                 </div>
                 <div class="car-image"><img src="assets/img/image_8.png" alt=""></div>
             </div>
         </div>
-        <div id="container5">
+        <div id="container7">
+            <div id="container7-header">
+                <h2>Car Rental <span>Process</span></h2>
+            </div>
+            <div id="rental-steps-container">
+                <div class="rental-steps-box">
+                    <h3>Choose A Car</h3>
+                    <p>View our range of cars, find your perfect car for the coming days.</p>
+                    <div id="rental-steps-row">
+                        <i class="fa-sharp fa-solid fa-1"></i>  
+                    </div>
+                </div>
+                <div class="rental-steps-box">
+                    <h3>Come In Contact</h3>
+                    <p>Our advisor team is ready to help you with the booking process or any questions.</p>
+                    <div id="rental-steps-row">
+                        <i class="fa-sharp fa-solid fa-2"></i>
+                    </div>
+                </div>
+                <div class="rental-steps-box">
+                    <h3>Enjoy Driving</h3>
+                    <p>Receive the key and enjoy your car. We treat all our cars with respect.
+                    </p>
+                    <div id="rental-steps-row">
+                        <i class="fa-sharp fa-solid fa-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="container5">
             <h1>Contact Us</h1>
             <div class="box3">
                 <div class="contact-form">
@@ -331,7 +355,7 @@
                     <img src="assets/img/image_9.png" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     
     <footer class="footer">
