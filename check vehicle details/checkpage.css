@@ -27,17 +27,21 @@ header {
     /* animation: slideDown 0.5s ease-in-out; */
 }
 
-
+/* @keyframes slideDown {
+    from{transform: translateY(-100%);}
+    to{transform: translateY(0);}
+} */
 .logo {
     margin-left: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.6rem;
+    font-variant: small-caps;
     color: #FFFFF0;
 }
 
 .links2 {
     display: flex;
-
+    list-style: none;
 }
 
 .toggle_btn {
@@ -51,7 +55,7 @@ header {
 .navbar2 .az {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     transition: 0.5s;
     background-color: #00000000;
     
@@ -127,7 +131,7 @@ header {
 #search {
     font-size: 1.1rem;
     width: 250px;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 13px;
     border-style: none;
     background-color: #FFFFF0;
@@ -171,6 +175,7 @@ header {
 .fa-user {
     margin-right: 5px;
 }
+
 
 /* responsiveness for header */
 /* @media(max-width: 1215px) {
