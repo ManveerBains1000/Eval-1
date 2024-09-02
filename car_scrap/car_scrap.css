@@ -156,7 +156,9 @@ header {
 }
 #container{
     height: max-content;
-    background-image: linear-gradient(rgba(10, 10, 10,0.8) ,#2B2E4A 90%);
+    background-image: url("https://c.ndtvimg.com/2021-12/hil35eb_car_625x300_31_December_21.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
