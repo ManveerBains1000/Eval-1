@@ -12,69 +12,41 @@
 <body>
     <!-- header section  -->
     <header>
-        <div class="navbar">
-            <ul class="links">
-                <li><a href="#"><i class="fa-solid fa-envelope" style="color: #d75737;"></i> info@example.com</a></li>
-                <li><a><i class="fa-solid fa-location-dot" style="color: #ce603b;"></i> 88 Broklyn Golden Street. New
-                        York
-                    </a></li>
-            </ul>
-            <ul class="links HSC">
-                <li><a href="#">Home</a></li>
-                <li><a>/</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a>/</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="links">
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-        <!-- <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            </div>
-          </div> -->
+
         <div class="navbar2">
-            <div class="logo">CarBrand</div>
+            <div class="logo">Car <span style="color: #CC5500;">Brand</span></div>
             <ul class="links2">
                 <li>
-                    <button>Home</button>
+                    <button class="ab" href="#">Home</button>
                 </li>
                 <li>
                     <div class="dropdown">
-                        <button>New Cars</button>
+                        <button class="ab" href="#">New Cars</button>
                         <div class="dropdown-content">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
+                            <a class="az" href="#">1</a>
+                            <a class="az" href="#">2</a>
+                            <a class="az" href="#">3</a>
                         </div>
                     </div>
                 </li>
-                <li><button>Rental Cars</button>
+                <li><a href="../car_rental_page/Car_rental_services.html"><button class="ab">Rental Cars</button></li></a>
                 <li>
                     <div class="dropdown">
-                        <button>Car Services</button>
+                        <button class="ab">Car Services</button>
                         <div class="dropdown-content">
-                            <a href="#">View And Pay Challan</a>
-                            <a href="#">Car Cervice history</a>
-                            <a href="#">Check Vehicle Details</a>
-                            <a href="#">Hire A Driver</a>
-                            <a href="#">Car Scrap</a>
-                            <a href="#">Car Servicing And Repair</a>
+                            <a class="az" href="../check challan/challanpage.html">View And Pay Challan</a>
+                            <a class="az" href="../Car_Service/Car_service.html">Car Service history</a>
+                            <a class="az" href="../check vehicle details/checkpage.html">Check Vehicle Details</a>
+                            <a class="az" href="../Pre_delivery_page/pre_delivery_inspection.html">Pre-delivery Inspection</a>
+                            <a class="az" href="../car_scrap/car_scrap.html">Car Scrap</a>
+            
                         </div>
                     </div>
 
                 </li>
-                <li><button>Contact Us</button>
+                <li><a href="../contact_us/contact_us.html"><button class="ab" href="#">Contact Us</button></a>
             </ul>
-            <div class="search_sh"><input type="search" id="search" placeholder="search">
+            <div class="search_sh"><input type="search" id="search" placeholder="Search">
                 <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <div class="toggle_btn">
@@ -82,10 +54,10 @@
             </div>
             <div class="login_lg">
                 <i class="fa-solid fa-user"></i>
-                <a href="#">Login / Signup</a>
+                <a href="../login_page/signin_form.html">Login / Signup</a>
             </div>
         </div>
-
+</header>
         <!-- tagline  -->
         <div class="container1">
             <center>
@@ -95,10 +67,10 @@
 
                     <div class="aq">
                         <a href="#" id="aq1">Browse
-                                Cars</a>
-                            <a href="#" id="aq2">Rent
-                                a Car now</a>
-                    
+                            Cars</a>
+                        <a href="#" id="aq2">Rent
+                            a Car now</a>
+
                     </div>
 
                 </div>
@@ -107,7 +79,10 @@
             <div class="absolute">
                 <br>
                 <p>Find your right car</p><br>
-                <input type="search" id="searchcar" placeholder="search your car....">
+                <div class="input-g">
+                    <span class="flag">IND</span>
+                    <input type="text" id="vehicle-number" placeholder="Find Car">
+                </div>
                 <br>
 
                 <div class="imn">
@@ -143,16 +118,16 @@
                             width="200px" height="220px">
                         <p id="height">Mahindra Thar ROXX</p>
                         <a>₹12.99 - 20.49 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
-                       </center>
+                        <center><a href="../secomndary pages/Mahindra/thar_5door.html"><button type="button">Check available offers</button></a>
+                        </center>
                     </div>
-                    
+
                     <div class="card">
                         <img src="https://images.moneycontrol.com/static-mcnews/2022/04/4-tata-curvv.jpg" width="220px"
                             height="220px">
                         <p id="height">Tata Curve EV</p>
                         <a>Not launched</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -160,7 +135,7 @@
                             width="220px" height="220px">
                         <p id="height">Hundai Alcazer</p>
                         <a>₹16.77 - 21.28 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Hyundai/creta.html"></a><button type="button">Check available offers</button>
                         </center>
                     </div>
                     <div class="card">
@@ -168,13 +143,13 @@
                             width="220px" height="220px">
                         <p id="height">Tata Seirra</p>
                         <a>Not Launched</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/TATA/safari.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                 </div>
             </div>
-            
-       
+
+
             <!-- luxury car section  -->
 
             <div class="row">
@@ -189,7 +164,7 @@
                             width="200px" height="220px">
                         <p id="height">XUV 700</p>
                         <a>₹15.77 - 26.04 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Mahindra/xuv700.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -197,7 +172,7 @@
                             width="220px" height="220px">
                         <p id="height">Tata Harrier</p>
                         <a>₹15.44 - 26.44 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/TATA/harrier.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -205,7 +180,7 @@
                             width="220px" height="220px">
                         <p id="height">Toyota Fortuner</p>
                         <a>₹33.43 - 55.44 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Toyota/Fortuner.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -213,7 +188,7 @@
                             width="220px" height="220px">
                         <p id="height">Hundai Tucsun</p>
                         <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Hyundai/tucson.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                 </div>
@@ -233,7 +208,7 @@
                             width="200px" height="220px">
                         <p id="height">Tata Safari</p>
                         <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/TATA/safari.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -241,7 +216,7 @@
                             width="220px" height="220px">
                         <p id="height">Toyota Fortuner</p>
                         <a>₹33.43 - 55.44 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Toyota/Fortuner.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -249,7 +224,7 @@
                             width="220px" height="220px">
                         <p id="height">Mahindra Scorpio</p>
                         <a>₹13.62 - 17.42 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Mahindra/Scorpio_N.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -257,7 +232,7 @@
                             height="220px">
                         <p id="height">Mahindra Bolero</p>
                         <a>₹9.79 - 10.91 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/Mahindra/Bolero.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                 </div>
@@ -276,7 +251,7 @@
                             width="200px" height="220px">
                         <p id="height">Tata Tigor EV</p>
                         <a>₹12.49 - 13.75 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href=""><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -284,7 +259,7 @@
                             width="220px" height="220px">
                         <p id="height">Tata Punch EV</p>
                         <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -292,7 +267,7 @@
                             width="220px" height="220px">
                         <p id="height">Mahindra XUV 400 EV</p>
                         <a>₹15.49 - 19.39 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href=""><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
@@ -300,7 +275,7 @@
                             width="220px" height="220px">
                         <p id="height">BYD Seal</p>
                         <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><button type="button">Check available offers</button>
+                        <center><a href=""><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                 </div>
@@ -309,36 +284,36 @@
             <!-- rentals section  -->
             <div class="row">
                 <div class="upper">
-                    <p id="height">Rentals</p>
+                    <p id="height">Family cars</p>
                     <br>
                     <br><br>
                 </div>
                 <div class=" card-box">
                     <div class="card">
                         <img src="teddy.png" width="200px" height="220px">
-                        <p id="height">Teddy Bear</p>
-                        <center><button type="button">Check available offers</button>
+                        <p id="height">Innova crysta</p>
+                        <center><a href="../secomndary pages/Toyota/innova_crysta.html"><button type="button">Check available offers</button></a>
                         </center>
 
                     </div>
                     <div class="card">
                         <img src="dog3.png" width="220px" height="220px">
-                        <p id="height">Mega Plush Toy</p>
-                        <center><button type="button">Check available offers</button>
+                        <p id="height">Innova hycross</p>
+                        <center><a href="../secomndary pages/Toyota/innova_hycross.html"><button type="button">Check available offers</button></a>
                         </center>
                     </div>
                     <div class="card">
                         <img src="dog1.png" width="220px" height="220px">
-                        <p id="height">Cute Dog</p>
-                        <center><button type="button">Check available offers</button>
+                        <p id="height">Verna</p>
+                        <center><a href="../secomndary pages/Hyundai/verna.html"><button type="button">Check available offers</button></a>
                         </center>
-                     </div>
+                    </div>
                     <div class="card">
                         <img src="dog2.png" width="220px" height="220px">
-                        <p id="height">Little Friend</p>
-                        <center><button type="button">Check available offers</button>
+                        <p id="height">Breeza</p>
+                        <center><a href="../secomndary pages/Maruti/breeza.html"><button type="button">Check available offers</button></a>
                         </center>
-                    
+
                     </div>
                 </div>
             </div>
@@ -354,23 +329,33 @@
                 <div class=" card-box1">
                     <div class="card1">
                         <img src="mahindra.webp" width="100%"><br>
-                        <p id="height">Teddy Bear</p>
+                        <center>
+                            <p id="height">Mahindra</p>
+                        </center>
                     </div>
                     <div class="card1">
                         <img src="honda.webp" width="100%"><br>
-                        <p id="height">Mega Plush Toy</p>
+                        <center>
+                            <p id="height">Honda</p>
+                        </center>
                     </div>
                     <div class="card1">
                         <img src="kia.webp" width="100%"><br>
-                        <p id="height">Cute Dog</p>
+                        <center>
+                            <p id="height">Kia</p>
+                        </center>
                     </div>
                     <div class="card1">
                         <img src="tata.webp" width="100%"><br>
-                        <p id="height">Little Friend</p>
+                        <center>
+                            <p id="height">Tata Motors</p>
+                        </center>
                     </div>
                     <div class="card1">
                         <img src="renault.webp" width="100%"><br>
-                        <p id="height">Little Friend</p>
+                        <center>
+                            <p id="height">Renoult</p>
+                        </center>
                     </div>
                 </div>
             </div>
@@ -496,11 +481,12 @@
         <!-- footer -->
 
         <footer class="footer">
-            
+
             <div class="footer-container">
                 <div>
                     <h4>About Us</h4>
-                    <p>We provide the best car sales and rental services in the region.<br> With a wide range of vehicles
+                    <p>We provide the best car sales and rental services in the region.<br> With a wide range of
+                        vehicles
                         and
                         great deals,<br> we ensure a hassle-free experience.</p>
                 </div>
@@ -521,7 +507,7 @@
                     <p><strong>Email:</strong> support@CarWebsite.com</p>
                     <p><strong>Phone:</strong> +1 234 567 890</p>
                     <p><strong>Location:</strong> 123 Main St, Cityville, USA</p>
-                    
+
                 </div>
                 <!-- <img id="imb" src="https://assets.cars24.com/production/c2b-website/240824145732/js/e7650cba1f79d817e97e45684ce20b2d.svg" alt="">
          -->
