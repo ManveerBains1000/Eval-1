@@ -178,7 +178,7 @@ header {
 
 
 /* responsiveness for header */
-/* @media(max-width: 1215px) {
+@media(max-width: 1215px) {
     
     .links2,
     .login_lg {
@@ -198,7 +198,7 @@ header {
         display: none;
     }
 
-} */
+}
 
 /* herosection  */
 
