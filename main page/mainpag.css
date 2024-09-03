@@ -298,10 +298,10 @@ li {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 280px;
+    height: 200px;
     content: "";
     z-index: 1;
-    background:linear-gradient(to bottom, rgba(255,255,255,0), #D3D3D3);
+    background:linear-gradient(to bottom, rgba(255,255,255,0), #D3D3D3 );
     left: 0;
 }
 
@@ -526,7 +526,7 @@ li {
     border: 2px solid #CC5500;
     color: #CC5500;
     justify-content: center;
-    background-color: white;
+    background-color: #fafaf5;
     padding: 8px;
     margin-top: 9%;
     border-radius: 5px;
