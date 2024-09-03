@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100vw;
@@ -21,7 +22,7 @@ body{
     display: flex; 
 }
 #box1{
-    height: 100%;
+    height: 80vh;
     width: 55%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -34,23 +35,27 @@ body{
     border-bottom-left-radius: 10px;
 }
 #box2{
-    height: 100%;
+    height: 80vh;
     width: 45%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
-
+.heading{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
 .heading h1{
     color: #1C1E32;
 }
 .form{
-    height: 50%;
+    height: 45vh;
     width: 100%;
+    margin-top: 50px;
 }
 form{
     height: 100%;
@@ -60,13 +65,12 @@ form{
     height: 100%;
     width: 100%;
     display: flex;
-    padding: 15px 0px;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 .items{
-    height: 15%;
+    height: 30px;
     width: 70%;
     margin: 8px 0px;
 }
@@ -83,8 +87,9 @@ form{
     width: 45%;
 }
 .signin-btn{
-    height: 8%;
+    height: 40px;
     width: 40%;
+    margin-top: 10px;
 }
 .signin-btn button{
     border: none;
@@ -105,4 +110,42 @@ form{
 }
 #signUp-btn p #signUp-box{
     color: black;
+}
+
+.tas-box{
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+#login{
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+#alternate-methods{
+    width: 100%;
+}
+#Alt-row1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#before-line,#after-line{
+    border: 0.01px solid #71797E;
+    width: 35%;
+    height: 0.01px;
+    background-color: red;
+}
+.text{
+    color: #71797E;
+    margin: 0px 4px;
+}
+#Alt-row2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Alt-row2 span{
+    margin: 0px 5px;
 }

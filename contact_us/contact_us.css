@@ -19,54 +19,38 @@ li{
     color: white;
     font-size: 0.9rem;
 }
-
-header {
-    position: relative;
-    
-}
-
-.navbar {
-    width: 100%;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(101, 92, 195);
-    background-color: #14213d;
-}
-
-.links {
-    display: flex;
-    gap: 2rem;
-}
-
-.HSC {
-    gap: 1rem;
-    margin-left: 15rem;
+header{
+    height: 60px;
 }
 
 .navbar2 {
-
-
+    z-index: 2;
     width: 100%;
     height: 60px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(17, 22, 18);
+    background-color: #333333;
+    position: fixed;
+    /* animation: slideDown 0.5s ease-in-out; */
 }
 
+/* @keyframes slideDown {
+    from{transform: translateY(-100%);}
+    to{transform: translateY(0);}
+} */
 .logo {
     margin-left: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.6rem;
-    color: white;
+    font-variant: small-caps;
+    color: #FFFFF0;
 }
 
 .links2 {
     display: flex;
-    gap: 1.5rem;
+
 }
 
 .toggle_btn {
@@ -77,28 +61,94 @@ header {
     display: none;
 }
 
-.navbar2 a {
+.navbar2 .az {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     transition: 0.5s;
+    background-color: #00000000;
+    
 }
 
-.navbar2 a:hover {
-    color: #ce603b;
+.links2 li::after {
+    content: '';
+    display: flex;
+    width: 0;
+    height: 3px;
+    background: #CC5500;
+    transition: width 0.3s;
+    position: relative;
+}
+.links2 li:hover::after {
+    width: 100%;
 }
 
+.links2 li .az::after{
+    content: '';
+    display: flex;
+    width: 0;
+    height: 2px;
+    background: #CC5500;
+    transition: width 0.3s;
+    position: relative;
+    bottom: -13px;
+}
+.links2 button{
+    font-size: 1rem;
+    border-style: none;
+    color: #FFFFF0;
+    background-color: #333333;
+    padding: 17px 15px;
+    cursor: pointer;
+
+}
+.links2 li .az:hover::after{
+    width: 100%;
+}
+.navbar2 button:hover {
+    color: #f0efef;
+   background-color: #696868;
+
+
+}
+  .dropdown-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: #424141;
+    min-width: 240px;
+    margin-top: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(103, 81, 81, 0.637);
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 14px 13px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+  }
+  
+  .dropdown-content a:hover {background-color: #696868}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  
 #search {
     font-size: 1.1rem;
     width: 250px;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 13px;
     border-style: none;
+    background-color: #FFFFF0;
 }
 
 .search_sh {
-    background-color: #ffffff;
-    border-radius: 5px;
+    background-color: #FFFFF0;
+    border-radius: 13px;
     color: rgb(0, 0, 0);
 
 }
@@ -111,16 +161,24 @@ header {
 }
 
 .login_lg {
-    color: #ffffff;
+    color: #FFFFF0;
     margin-right: 1rem;
-    padding: 6px 10px 6px 10px;
-    border-radius: 15px;
+    padding: 10px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: #ce603b;
+    background-color: #333333;
+    transition: 0.6s;
+   
 }
-
+.login_lg:hover{
+    background-color: #CC5500;
+    
+}
 .login_lg a {
+    color: #FFFFF0;
     font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .fa-user {
@@ -128,14 +186,17 @@ header {
 }
 
 /* responsiveness for header */
-@media(max-width: 1115px) {
+@media(max-width: 1215px) {
 
     .navbar,
     .links2,
     .login_lg {
         display: none;
     }
-
+    .navbar2{
+        margin-top: -60px;
+        position: fixed;
+    }
     .toggle_btn {
         display: block;
     }
@@ -160,13 +221,15 @@ header {
 #container_1{
     height: 100vh;
     width: 100%;
-    background-image: url("assets/images/image_1.jpg");
+    background-image: url("assets/images/image_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    background-position-y: 50% ;
 }
 #page-heading{
     z-index: 2;
