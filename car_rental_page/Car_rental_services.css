@@ -241,7 +241,7 @@ header{
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 h1{
     font-size: 5rem;
@@ -297,6 +297,7 @@ h1 span{
     border: none;
     border-radius: 2px;
     padding: 10px 5px;
+    border-radius: 10px;
 }
 .input-box .submit-btn{
     margin-top:10px ;
@@ -310,6 +311,7 @@ h1 span{
     border: none;
     background-color: #F77D0A;
     color: #fff;
+    border-radius:16px ;
 }
 #Selectcar-col{
     margin-top: 10px;
@@ -353,6 +355,7 @@ h1 span{
 }
 #container2-header h1{
     color:#2B2E4A;
+    font-size: 3.5rem;
 }
 .breaker{
     margin-top: 10px;
