@@ -14,23 +14,8 @@ section{
 li{
     list-style: none;
 }
-<<<<<<< HEAD
 .navbar2 {
-
-    z-index: 1;
-=======
-.navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.9rem;
-}
-header{
-    height: 60px;
-}
-
-.navbar2 {
-    z-index: 2;
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
+    z-index: 4;
     width: 100%;
     height: 70px;
     margin: 0 auto;
@@ -39,7 +24,7 @@ header{
     justify-content: space-between;
     background-color: #333333;
     position: fixed;
-<<<<<<< HEAD
+
     animation: slideDown 0.5s ease-in-out;
 }
 
@@ -47,15 +32,6 @@ header{
     from{transform: translateY(-100%);}
     to{transform: translateY(0);}
 }
-=======
-    /* animation: slideDown 0.5s ease-in-out; */
-}
-
-/* @keyframes slideDown {
-    from{transform: translateY(-100%);}
-    to{transform: translateY(0);}
-} */
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
 .logo {
     margin-left: 1rem;
     font-weight: 700;
@@ -66,11 +42,7 @@ header{
 
 .links2 {
     display: flex;
-<<<<<<< HEAD
     list-style: none;
-=======
-
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
 }
 
 .toggle_btn {
@@ -127,11 +99,7 @@ header{
 }
 .navbar2 button:hover {
     color: #f0efef;
-<<<<<<< HEAD
    background-color: #3d3d3d;
-=======
-   background-color: #696868;
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
 
 
 }
@@ -139,11 +107,7 @@ header{
     display: none;
     z-index: 1;
     position: absolute;
-<<<<<<< HEAD
     background-color: #333333;
-=======
-    background-color: #424141;
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
     min-width: 240px;
     margin-top: 4px;
     box-shadow: 0px 8px 16px 0px rgba(103, 81, 81, 0.637);
@@ -157,11 +121,7 @@ header{
     font-size: 0.8rem;
   }
   
-<<<<<<< HEAD
   .dropdown-content a:hover {background-color: #3d3d3d}
-=======
-  .dropdown-content a:hover {background-color: #696868}
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -175,19 +135,11 @@ header{
     padding: 5px 10px;
     border-radius: 13px;
     border-style: none;
-<<<<<<< HEAD
     background-color: #f8f8f000;
 }
 
 .search_sh {
     background-color: #f6f6e3f1;
-=======
-    background-color: #FFFFF0;
-}
-
-.search_sh {
-    background-color: #FFFFF0;
->>>>>>> 214f137869b9a8bf2b9a3278b46254fee719a590
     border-radius: 13px;
     color: rgb(0, 0, 0);
 
