@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100vw;
     height: 100%;
 }
+
 #main{
     width: 100vw;
     height: 100vh;
@@ -40,10 +42,15 @@ body{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
-
+.heading{
+    text-align: center;
+    margin: 20px 0px;
+}
+.heading p{
+    margin: 20px 50px;
+}
 .heading h1{
     color: #003049;
 }
@@ -75,7 +82,10 @@ form{
 }
 .signin-btn{
     height: 15%;
-    width: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .signin-btn button{
     border: none;
@@ -83,17 +93,52 @@ form{
     color: #fff;
     background-color: #1C1E32;
     height: 100%;
+    width: 40%;
+    cursor: pointer;
+}
+#signup-btn a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+#alternate-methods{
     width: 100%;
 }
-#signUp-btn{
+#Alt-row1{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#before-line,#after-line{
+    border: 0.01px solid #71797E;
+    width: 35%;
+    height: 0.01px;
+    background-color: red;
+}
+.text{
+    color: #71797E;
+    margin: 0px 4px;
+}
+#Alt-row2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Alt-row2 span{
+    margin: 0px 5px;
+}
+
+#rem-pass{
+    /* background-color: red; */
+    display: flex;
+    width: 70%;
+    font-size: 0.8rem;
     justify-content: space-between;
 }
-#signUp-btn p a{
+#rem-pass p a{
     text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-#signUp-btn p #signUp-box{
     color: black;
 }
