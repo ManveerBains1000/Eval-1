@@ -15,20 +15,20 @@ header {
 
     z-index: 1;
     width: 100%;
-    height: 60px;
+    height: 70px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #333333;
     position: fixed;
-    /* animation: slideDown 0.5s ease-in-out; */
+    animation: slideDown 0.5s ease-in-out;
 }
 
-/* @keyframes slideDown {
+@keyframes slideDown {
     from{transform: translateY(-100%);}
     to{transform: translateY(0);}
-} */
+}
 .logo {
     margin-left: 1rem;
     font-weight: 700;
@@ -96,7 +96,7 @@ header {
 }
 .navbar2 button:hover {
     color: #f0efef;
-   background-color: #696868;
+   background-color: #3d3d3d;
 
 
 }
@@ -104,7 +104,7 @@ header {
     display: none;
     z-index: 1;
     position: absolute;
-    background-color: #424141;
+    background-color: #333333;
     min-width: 240px;
     margin-top: 4px;
     box-shadow: 0px 8px 16px 0px rgba(103, 81, 81, 0.637);
@@ -118,7 +118,7 @@ header {
     font-size: 0.8rem;
   }
   
-  .dropdown-content a:hover {background-color: #696868}
+  .dropdown-content a:hover {background-color: #3d3d3d}
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -132,11 +132,11 @@ header {
     padding: 5px 10px;
     border-radius: 13px;
     border-style: none;
-    background-color: #FFFFF0;
+    background-color: #f8f8f000;
 }
 
 .search_sh {
-    background-color: #FFFFF0;
+    background-color: #f6f6e3f1;
     border-radius: 13px;
     color: rgb(0, 0, 0);
 
@@ -201,18 +201,21 @@ header {
 
 .hero_section{
     width: 100%;
-    height: 490px;
-    background-image: url('https://assets.cars24.com/production/c2b-website/240828164749/js/ea399292f3ce7839d4086cf934060f06.webp');
+    height: 630px;
+    background-image: url('https://media.istockphoto.com/id/1134890323/photo/woman-using-smartphone-the-concept-of-using-the-phone-is-essential-in-everyday-life.webp?b=1&s=612x612&w=0&k=20&c=hdF9-MA1VmJ1qjvr7-mobgu_9da7T6zfM1jtRflVCNw=');
+    background-size: 100%;
+    background-attachment: fixed;
 }
 .view{
-    width: 30%;
+    width: 35%;
     height: 300px;
-    background-color: rgb(247, 242, 242);
+    background-color: #fafaf5ee;
     position: relative;
-    top: -36%;
-    left: 62%;
-    border-radius: 30px;
+    top: -23%;
+    left: 58%;
+    border-radius: 15px;
     padding: 40px 30px;
+    margin-top: 60px;
 }
 /* .view input{
     font-size: 25px;
@@ -258,7 +261,8 @@ header {
     color: white;
     display: flex;
     justify-content: center;
-   border-radius: 8px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .vc a{
     text-decoration: none;
@@ -291,8 +295,9 @@ header {
     width: 40%;
     padding: 20px;
     position: relative;
-    top: 20%;
+    top: 30%;
     left: 5%;
+    text-shadow: 1px 1px 2px black;
 }
 .lines i{
     font-size: 20px;
@@ -348,14 +353,14 @@ header {
     padding: 24px 17px;
     width: 82%;
     height: 144px;
-    background-color: #FFFFF0;
+    background-color: #fafaf5ec;
     position: relative;
     top: 70%;
     left: 9%;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    box-shadow: 1px 1px 10px  #e9e8e8;
+    box-shadow: 1px 1px 10px  rgb(184, 181, 181);
 }
 .svp .num{
     background-color: #eff2f2;
@@ -368,7 +373,7 @@ header {
      font-weight: bold;
 }
 .svp .text{
-    padding: 15px 20px;
+    padding: 15px 15px;
     
 }
 .text p{
@@ -379,14 +384,14 @@ header {
 
 
 .what-is{
-    background-color: #FFFFF0;
+    background-color:  #fafaf5ec;
     margin: 110px;
     padding: 20px;
     border-radius: 15px;
     display: flex;
 }
 .imb{
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     padding: 10px;
     border-radius: 15px;
 }
@@ -415,10 +420,10 @@ header {
 .boxes{
     width: 31%;
     height: 120px;
-    background-color: #F5F5F5;
+    background-color:  #fafaf5cf;
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 1px 3px 1px #F5F5F5;
+    box-shadow: 1px 1px 3px 1px rgb(184, 181, 181);
     border-radius: 15px;
     margin-top: 10px;
 }
@@ -449,7 +454,7 @@ header {
 .ans{
     width: 32%;
     height: 200px;
-    background-color: #F5F5F5;
+    background-color: #fafaf5ec;
     margin-bottom: 90px;
     
     box-shadow: 1px 1px 3px 1px rgb(184, 181, 181);
@@ -489,10 +494,10 @@ header {
 .div1{
     width: 49%;
     height: 280px;
-    background-color: #F5F5F5;
+    background-color: #fafaf5ec;
     display: flex;
     border-radius: 30px;
-    box-shadow: 5px 5px 10px 5px rgb(228, 225, 225);
+    box-shadow: 5px 5px 10px 5px rgb(184, 181, 181);
     cursor: pointer;
 }
 .dm img{
