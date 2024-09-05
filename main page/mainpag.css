@@ -362,7 +362,7 @@ li {
     font-weight: 500;
     align-self: center;
 }
-/* responsiveness  for text over image  */
+/* responsiveness  for text over images  */
 @media(max-width: 1215px){
     .container1{
         margin-top: 60px ;
