@@ -291,17 +291,17 @@ li {
     background-size: 100%;
     background-attachment: fixed;
     margin-top: 60px;
-
+    position: relative;
 
 }
 .container1:before{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 280px;
+    height: 200px;
     content: "";
     z-index: 1;
-    background:linear-gradient(to bottom, rgba(255,255,255,0), #D3D3D3);
+    background:linear-gradient(to bottom, rgba(255,255,255,0), #D3D3D3 );
     left: 0;
 }
 
@@ -368,12 +368,12 @@ li {
         margin-top: 60px ;
     }
     .tagline{
-        top: 9vw;
+        top: 18vw;
     }
 }
 @media(max-width:480px) {
     .tagline {
-        top: 5vw;
+        top: 9vw;
     }
 
     .tagline a {
@@ -439,7 +439,7 @@ li {
 
 @media(max-width:1040px) {
     .tagline {
-        top: 8vw;
+        top: 17vw;
     }
     .absolute{
         top: 80%;
@@ -526,7 +526,7 @@ li {
     border: 2px solid #CC5500;
     color: #CC5500;
     justify-content: center;
-    background-color: white;
+    background-color: #fafaf5;
     padding: 8px;
     margin-top: 9%;
     border-radius: 5px;
@@ -569,7 +569,7 @@ li {
 }
 .logos-slide{
     display: inline-block;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     animation: 20s slides infinite linear;
 }
 .logos-slide img{
@@ -591,7 +591,6 @@ li {
 .logos:before, .logos:after{
     position: absolute;
     top: 0;
-    
     width: 400px;
     height: 100%;
     content: "";
