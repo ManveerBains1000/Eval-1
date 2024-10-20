@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="redirect-msg">
+        <p>Login is Sucessfull</p>
+        <p>We are redirecting to main page</p>
+    </div>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <div class="underline"></div>
+            <div class="input-group">
+                <div class="input-field username-field">
+                    <label for="user-name">User Name</label> <br>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="user-name" id="input-username" autocomplete="on" required placeholder="Enter your User Name">
+                    <span class="error">Invalid Input</span>
+                </div>
+                <div class="input-field">
+                    <label for="email">Email</label> <br>
+                    <i class="fa-solid fa-at"></i>
+                    <input type="email" name="email" id="input-email" autocomplete="on" required placeholder="Enter your email">
+                    <span class="error">Invalid Input</span>
+                </div>
+                <div class="input-field">
+                    <label for="pass">Password</label> <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="pass" id="input-pass" autocomplete="on" required placeholder="Enter password">
+                    <span class="error">Invalid Input</span>
+
+                </div>
+                <div class="input-field">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember" id="forget-pass">Remember Me</label>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button id="signup-btn">Sign Up</button>
+                <button id="signin-btn">Sign In</button>
+            </div>
+            <div class="line-break">
+                <div class="left"></div>
+                <div class="text">Or</div>
+                <div class="right"></div>
+            </div>
+            <div class="other">
+                <div class="google-login other-options">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="facebook-login other-options">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="microsoft-account other-options">
+                    <i class="fa-brands fa-microsoft"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
