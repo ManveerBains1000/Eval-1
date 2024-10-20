@@ -68,7 +68,7 @@ function errorDetection(){
         errorBox[2].classList.remove("errorDisplay");
     }
     else{
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "../main page/mainpage.html";
     }
 
 }
