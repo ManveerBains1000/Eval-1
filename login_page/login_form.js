@@ -1,20 +1,26 @@
-let signupBtn = document.querySelector("#signup-btn")
-let signinBtn = document.querySelector("#signin-btn")
+let signupBtn = document.querySelector("#signup-btn");
+let signinBtn = document.querySelector("#signin-btn");
+let userNameBox = document.querySelector("#input-username");
+let emailBox = document.querySelector("#input-email");
+let passBox = document.querySelector("#input-pass");
+let errorBox = document.querySelectorAll(".error");
 let heading = document.querySelector("h1");
 let underline = document.querySelector(".underline");
 let userNameField = document.querySelector(".username-field");
 let forgetPass = document.querySelector("#forget-pass");
 let insideSignin = false;
 let insideSignUp = true;
-let errorBox = document.querySelectorAll(".error");
 let isUserNameDisplay = 1;
-function hideError(){
-errorBox.forEach((error)=>{
-    error.classList.add("errorDisplay");
-    error.classList.remove("error");
-})
+
+
+function hideError() {
+    errorBox.forEach((error) => {
+        // error.classList.add("errorDisplay");
+        // error.classList.remove("error");
+        error.style.display = "none"; // Use style.display for hiding
+    });
 }
-hideError();
+
 signinBtn.addEventListener("click",()=> {
     heading.innerText = "Sign In";
     underline.style.transform = "translateX(40px)";
@@ -41,38 +47,29 @@ signupBtn.addEventListener("click",()=> {
     insideSignUp = true;
     hideError();
 })
-let emailBox = document.querySelector("#input-email");
-let userNameBox = document.querySelector("#input-username");
-let PassBox = document.querySelector("#input-pass");
-function errorDetection(){
-    let isValid1 = userNameBox.value == "" || userNameBox.value.length < 12 ? false : true;
-    let isValid2 = emailBox.value == "" || emailBox.value.length < 12 ? false : true;
-    let isValid3 = PassBox.value == "" || PassBox.value.length < 12 ? false : true;
-    console.log(isUserNameDisplay);
-    if (!isValid1 && !isValid2 && !isValid3){
-        errorBox.forEach((error)=>{
-            error.classList.remove("errorDisplay");
-            error.classList.add("error");
-        })
-    } 
-    else if (!isValid1 && isUserNameDisplay){
-        errorBox[0].classList.add("error");
-        errorBox[0].classList.remove("errorDisplay");
-    }
-    else if(!isValid2){
-        errorBox[1].classList.add("error");
-        errorBox[1].classList.remove("errorDisplay");
-    }
-    else if(!isValid3){
-        errorBox[2].classList.add("error");
-        errorBox[2].classList.remove("errorDisplay");
-    }
-    else{
+
+function errorDetection() {
+    hideError();
+    let isValid1 = userNameBox.value !== "";
+    let isValid2 = emailBox.value !== "";
+    let isValid3 = passBox.value !== "";
+    
+    if (!isValid1 || !isValid2 || !isValid3) {
+        if (!isValid1) {
+            errorBox[0].style.display = "block"; // Show error
+        }
+        if (!isValid2) {
+            errorBox[1].style.display = "block"; // Show error
+        }
+        if (!isValid3) {
+            errorBox[2].style.display = "block"; // Show error
+        }
+    } else {
+        
+        localStorage.setItem("username", userNameBox.value);
         window.location.href = "../main page/mainpage.html";
     }
-
 }
 
-
-signupBtn.addEventListener("dblclick",errorDetection);
-signinBtn.addEventListener("dblclick",errorDetection);
+signupBtn.addEventListener("dblclick", errorDetection);
+signinBtn.addEventListener("dblclick", errorDetection);
