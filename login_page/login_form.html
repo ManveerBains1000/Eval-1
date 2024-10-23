@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="login_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Login Page</title>
 </head>
+
 <body>
-    <div class="redirect-msg">
-        <p>Login is Sucessfull</p>
-        <p>We are redirecting to main page</p>
-    </div>
     <div class="container">
-        <div class="form-box">
+        <form id="login-form">
+
             <h1>Sign Up</h1>
             <div class="underline"></div>
             <div class="input-group">
                 <div class="input-field username-field">
                     <label for="user-name">User Name</label> <br>
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" name="user-name" id="input-username" autocomplete="on" required placeholder="Enter your User Name">
-                    <span class="error">Invalid Input</span>
+                    <input type="text" name="user-name" id="input-username" required placeholder="Enter your User Name">
+                    <span class="error" style="display:none;">Invalid Input</span>
                 </div>
                 <div class="input-field">
                     <label for="email">Email</label> <br>
-                    <i class="fa-solid fa-at"></i>
-                    <input type="email" name="email" id="input-email" autocomplete="on" required placeholder="Enter your email">
-                    <span class="error">Invalid Input</span>
+                    <input type="email" name="email" id="input-email" required placeholder="Enter your email">
+                    <span class="error" style="display:none;">Invalid Input</span>
                 </div>
                 <div class="input-field">
                     <label for="pass">Password</label> <br>
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="text" name="pass" id="input-pass" autocomplete="on" required placeholder="Enter password">
-                    <span class="error">Invalid Input</span>
-
+                    <input type="text" name="pass" id="input-pass" required placeholder="Enter password">
+                    <span class="error" style="display:none;">Invalid Input</span>
                 </div>
                 <div class="input-field">
                     <input type="checkbox" name="remember" id="remember">
@@ -42,8 +37,8 @@
                 </div>
             </div>
             <div class="btn-container">
-                <button id="signup-btn">Sign Up</button>
-                <button id="signin-btn">Sign In</button>
+                <button type="button" id="signup-btn">Sign Up</button>
+                <button type="button" id="signin-btn">Sign In</button>
             </div>
             <div class="line-break">
                 <div class="left"></div>
@@ -52,17 +47,23 @@
             </div>
             <div class="other">
                 <div class="google-login other-options">
-                    <i class="fa-brands fa-google"></i>
+                   <a href="https://myaccount.google.com/"><i class="fa-brands fa-google"></i></a> 
                 </div>
                 <div class="facebook-login other-options">
-                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
                 </div>
                 <div class="microsoft-account other-options">
-                    <i class="fa-brands fa-microsoft"></i>
+                   <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL+openid+profile+offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=d6665051-c164-4117-9835-a1deae26d7e3&x-client-SKU=MSAL.Desktop&x-client-Ver=4.61.3.0&x-client-OS=Windows+Server+2019+Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBSaJDMAAA0Lt0a2FqqSVC1fSVqGGnxDwTTZ3-v3fxhXauf0YPSvuWWAfhQtdc9WoXcvLwqexdEzWvxj0LtAlllJ5_Y6XEClWk5wueM4bFIJLCBB70XnC6AyyrX0mPyE5nT8phBd6ft8AL0NZXjWlEg9FfPREhoSqSX4jJuVu41R2J15-6k51C_GlwYkxkvZMx91iTEa0-z2dRkejVDTpeDew4dOmSG88tXTnQKTRfArVZNtZqQXowW66dN-DfoJVWXSrBL7e2m1NMivzcLdRh7U9jmCT4PFh0XeeOg2NYb7IXdXY8jHQbRf2AO1LKC2PpsD0WV-TefmaQNnsfMLdRfboopqJGWM6VBUy4Xv4B8ybmP0IBAAA&msaoauth2=true&lc=1033&sso_reload=true"> <i class="fa-brands fa-microsoft"></i></a>
+                </div>
+                <div class="facebook-login other-options">
+                    <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
-        </div>
+        </form>
+
     </div>
+
     <script src="login_form.js"></script>
 </body>
+
 </html>

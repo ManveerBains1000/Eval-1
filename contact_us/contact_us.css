@@ -414,3 +414,9 @@ li{
     height: 100%;
     width: 100%;
 }
+
+#error{
+    font-size: 0.6rem;
+    color: red;
+    margin: 10px;
+}

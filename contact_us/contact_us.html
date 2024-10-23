@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact_us.css">
 </head>
+
 <body>
     <header>
 
@@ -25,7 +27,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="../car_rental_page/Car_rental_services.html"><button class="ab">Rental Cars</button></li></a>
+                <li><a href="../car_rental_page/Car_rental_services.html"><button class="ab">Rental Cars</button></li>
+                </a>
                 <li>
                     <div class="dropdown">
                         <button class="ab">Car Services</button>
@@ -33,9 +36,10 @@
                             <a class="az" href="../check challan/challanpage.html">View And Pay Challan</a>
                             <a class="az" href="../Car_Service/Car_service.html">Car Service history</a>
                             <a class="az" href="../check vehicle details/checkpage.html">Check Vehicle Details</a>
-                            <a class="az" href="../Pre_delivery_page/pre_delivery_inspection.html">Pre-delivery Inspection</a>
+                            <a class="az" href="../Pre_delivery_page/pre_delivery_inspection.html">Pre-delivery
+                                Inspection</a>
                             <a class="az" href="../car_scrap/car_scrap.html">Car Scrap</a>
-            
+
                         </div>
                     </div>
 
@@ -53,56 +57,63 @@
                 <a href="../login_page/signin_form.html">Login / Signup</a>
             </div>
         </div>
-</header>
+    </header>
     <main>
         <section>
             <div id="fade"></div>
             <div id="container_1">
-                <div id="page-heading"><h1>Contact Us</h1></div>
-                <div class="text"><ul>
-                    <li><a href="../main page/mainpage.html" target="_blank">Home</a></li>
-                    <li><a href="contact_us.html" target="_blank">Contact Us</a></li>
-                </ul></div>
+                <div id="page-heading">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="text">
+                    <ul>
+                        <li><a href="../main page/mainpage.html" target="_blank">Home</a></li>
+                        <li><a href="contact_us.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <div id="contact-container">
             <div class="box3">
-            <div class="contact-form">
-                <form action="">
-                    <div class="field-2">
-                        <div class="contact-col">
-                            <div class="contact-col1-items">
-                                <input type="text" placeholder="Your Name">
+                <div class="contact-form">
+                    <form>
+                        <div class="field-2">
+                            <div class="contact-col">
+                                <div class="contact-col1-items">
+                                    <input type="text" placeholder="Your Name" id="inp-name">
+                                    <span id="error">Invalid Input</span>
+                                </div>
+                                <div class="contact-col1-items">
+                                    <input type="text" name="email" id="inp-email" placeholder="Your Email">
+                                    <span id="error">Invalid Input</span>
+                                </div>
                             </div>
-                            <div class="contact-col1-items">
-                                <input type="text" name="" id="" placeholder="Your Email">
+                            <div class="contact-col">
+                                <div class="contact-col2-items">
+                                    <input type="text" name="" id="inp-subject" placeholder="Subject">
+                                    <span id="error">Invalid Input</span>
+                                </div>
+                            </div>
+                            <div class="contact-col">
+                                <div class="contact-col3-items">
+                                    <textarea name="" id="flow-control" placeholder="Message"></textarea>
+                                    <span id="error">Invalid Input</span>
+                                </div>
+                            </div>
+                            <div class="contact-col">
+                                <div class="contact-col4-btn">
+                                    <button id="submit-btn">Submit</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-col">
-                            <div class="contact-col2-items">
-                                <input type="text" name="" id="" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="contact-col">
-                            <div class="contact-col3-items">
-                                <textarea name="" id="flow-control" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-col">
-                            <div class="contact-col4-btn">
-                                <button>Submit</button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </form>
-            </div>
-            <div class="carimage-2">
-                <img src="assets/images/image_9.png" alt="">
+                    </form>
+                </div>
+                <div class="carimage-2">
+                    <img src="assets/images/image_9.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
+
 
     </main>
     <footer class="footer">
@@ -146,5 +157,7 @@
             <p>&copy; 2024 CarSalesAndRentals. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="contact_us.js"></script>
 </body>
+
 </html>
