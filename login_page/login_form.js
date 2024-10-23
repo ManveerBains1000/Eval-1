@@ -8,16 +8,12 @@ let heading = document.querySelector("h1");
 let underline = document.querySelector(".underline");
 let userNameField = document.querySelector(".username-field");
 let forgetPass = document.querySelector("#forget-pass");
-let insideSignin = false;
-let insideSignUp = true;
 let isUserNameDisplay = 1;
-
+let checkBox = document.querySelector("#remember");
 
 function hideError() {
     errorBox.forEach((error) => {
-        // error.classList.add("errorDisplay");
-        // error.classList.remove("error");
-        error.style.display = "none"; // Use style.display for hiding
+        error.style.display = "none"; 
     });
 }
 
@@ -27,10 +23,11 @@ signinBtn.addEventListener("click",()=> {
     userNameField.style.display = "none";
     signinBtn.style.backgroundColor = "#669bbc";
     signupBtn.style.backgroundColor = "#fff";
-    forgetPass.innerText = "Forget Password"
-    insideSignin = true;
-    insideSignUp = false;
+    forgetPass.innerText = "Forget Password ?"
+    forgetPass.style.cursor = "pointer";
+    forgetPass.style.textDecoration = "underline";
     isUserNameDisplay = 0;
+    checkBox.style.display = "none";
     hideError();
 })
 
@@ -41,10 +38,10 @@ signupBtn.addEventListener("click",()=> {
     signinBtn.style.backgroundColor = "#fff";
     signupBtn.style.backgroundColor = "#669bbc";
     forgetPass.innerText = "Remember Me"
+    forgetPass.style.textDecoration = "none";
+    checkBox.style.display = "inline";
     errorBox.innerText = "";
-    insideSignin = false;
     isUserNameDisplay = 1;
-    insideSignUp = true;
     hideError();
 })
 
@@ -56,18 +53,21 @@ function errorDetection() {
     
     if (!isValid1 || !isValid2 || !isValid3) {
         if (!isValid1) {
-            errorBox[0].style.display = "block"; // Show error
+            userNameBox.style.border = "1px solid red";
+            errorBox[0].style.display = "block"; 
+
         }
         if (!isValid2) {
-            errorBox[1].style.display = "block"; // Show error
+            emailBox.style.border = "1px solid red";
+            errorBox[1].style.display = "block"; 
         }
         if (!isValid3) {
-            errorBox[2].style.display = "block"; // Show error
+            passBox.style.border = "1px solid red";
+            errorBox[2].style.display = "block"; 
         }
     } else {
-        
         localStorage.setItem("username", userNameBox.value);
-        window.location.href = "../main page/mainpage.html";
+        window.location.href = "../main page/mainpage.html"; 
     }
 }
 

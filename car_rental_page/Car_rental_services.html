@@ -14,7 +14,7 @@
 
 <body>
     <div id="pre-loader">
-        <img src="assets/pre-loader-image/Gear.gif" alt="pre-loading">
+        <img src="assets/pre-loader-image/Gear.gif" alt="pre-loading" width="30px">
         <p>Loading...</p>
     </div>
     <header>
@@ -63,13 +63,11 @@
             </div>
             <div class="login_lg">
                 <i class="fa-solid fa-user"></i>
-                <a href="../login_page/signin_form.html">Login / Signup</a>
+                <a href="../login_page/login_form.html">Login / Signup</a>
             </div>
         </div>
     </header>
     <main>
-        <div id="pre-loader">
-        </div>
         <div id="container" class="image-1">
             <div class="fade-black"></div>
             <div class="box-header">
@@ -83,9 +81,10 @@
                         <div class="input-box">
                             <label for="Selectcar-col">Select a Car</label> <br>
                             <select name="Selectcaropt" id="Selectcar-col">
-                                <option value="1">car1</option>
-                                <option value="1">car1</option>
-                                <option value="1">car1</option>
+                                <option value="1">Mahindra Thar ROXX</option>
+                                <option value="2">Mahindra Scorpio N</option>
+                                <option value="3">Mahindra Bolero</option>
+                                <option value="4">Mahindra XUV700</option>
                             </select>
                         </div>
                         <div class="input-box">
@@ -100,11 +99,12 @@
                             <label for="r-d">Return</label>
                             <input type="date" name="r-d" id="r-d">
                         </div>
-                        <div class="submit-btn">
-                            <button>Submit</button>
-                        </div>
+   
                     </div>
                 </form>
+                <div class="submit-btn-box">
+                    <button id="car-sel-submit-btn">Submit</button>
+                </div>
             </div>
         </div>
 

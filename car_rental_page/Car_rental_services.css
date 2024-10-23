@@ -219,12 +219,20 @@ button{
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
+    background-position: center;
+    transition: background-image  1s;
 }
 .image-1{
-    background-image: url("assets/bg-image/image-1.jpg");
+    background-image: url("assets/bg-image/image-1.png");
 }
 .image-2{
     background-image: url("assets/bg-image/image-2.png");
+}
+.image-3{
+    background-image: url("assets/bg-image/image-3.png");
+}
+.image-4{
+    background-image: url("assets/bg-image/image-4.png");
 }
 .box-header{
     display: flex;
@@ -305,7 +313,7 @@ h1 span{
     height: fit-content;
     width: 20%;
 }
-.submit-btn button{
+.submit-btn-box button{
     width: 100%;
     padding: 16px 36px;
     border-radius: 2px;
