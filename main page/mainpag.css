@@ -486,7 +486,7 @@ li {
     margin-top: 40px;
     justify-content: space-evenly;
     overflow-x: auto;
-     white-space: nowrap;
+    white-space: nowrap;
     height: 400px;
     overflow-y: hidden;
     background-color: #fafaf500;
