@@ -15,22 +15,24 @@
     <header>
 
         <div class="navbar2">
-            <div class="logo">Car <span style="color: #CC5500;">Brand</span></div>
+            <div class="logo">Prime <i class="fa-solid fa-car-side" style="color: #f7f9fc;font-size: 1.3rem;"></i> <span
+                    style="color: #CC5500;">Auto</span></div>
             <ul class="links2">
                 <li>
-                    <button class="ab" href="#">Home</button>
+                    <button class="ab">Home</button>
                 </li>
                 <li>
                     <div class="dropdown">
                         <button class="ab" href="#">New Cars</button>
                         <div class="dropdown-content">
-                            <a class="az" href="#">1</a>
-                            <a class="az" href="#">2</a>
-                            <a class="az" href="#">3</a>
+                            <a class="az" href="../secomndary pages/Mahindra/thar_5door.html">Mahindra Thar ROXX</a>
+                            <a class="az" href="../secomndary pages/TATA/safari.html">TATA Punch EV</a>
+                            <a class="az" href="../secomndary pages/Toyota/innova_hycross.html">Ennova hycross</a>
                         </div>
                     </div>
                 </li>
-                <li><a href="../car_rental_page/Car_rental_services.html"><button class="ab">Rental Cars</button></li></a>
+                <li><a href="../car_rental_page/Car_rental_services.html"><button class="ab">Rental Cars</button></li>
+                </a>
                 <li>
                     <div class="dropdown">
                         <button class="ab">Car Services</button>
@@ -38,9 +40,10 @@
                             <a class="az" href="../check challan/challanpage.html">View And Pay Challan</a>
                             <a class="az" href="../Car_Service/Car_service.html">Car Service history</a>
                             <a class="az" href="../check vehicle details/checkpage.html">Check Vehicle Details</a>
-                            <a class="az" href="../Pre_delivery_page/pre_delivery_inspection.html">Pre-delivery Inspection</a>
+                            <a class="az" href="../Pre_delivery_page/pre_delivery_inspection.html">Pre-delivery
+                                Inspection</a>
                             <a class="az" href="../car_scrap/car_scrap.html">Car Scrap</a>
-            
+
                         </div>
                     </div>
 
@@ -53,482 +56,526 @@
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="login_lg">
+            <div id="login-button" style="display: none;">
                 <i class="fa-solid fa-user"></i>
-                <a href="../login_page/signin_form.html">Login / Signup</a>
+                <a href="../login_page/login_form.html">Login / Signup</a>
+            </div>
+            <div id="profile-info" style="display: none;">
+                <div class="sub-menu-wrap" id="subMenu">
+                    <img id="profile-photo"
+                    src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png"
+                    alt="Profile Photo" onclick="toggleMenu()" class="profile-pic">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png">
+                            <h3 id="username1"></h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png" alt="">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png" alt="">
+                            <p>Settings & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png" alt="">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png" alt="">
+                            <p onclick="logout()">Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-</header>
-        <!-- tagline  -->
-        <div class="container1">
-            <center>
-                <div class="tagline">
-                    <a>Find your dream car today</a><br>
-                    <a id="asm">And Drive the Future</a><br><br>
+    </header>
+    <!-- tagline  -->
+    <div class="container1">
+        <center>
+            <div class="tagline">
+                <a>Find your dream car today</a><br>
+                <a id="asm">And Drive the Future</a><br><br>
 
-                    <div class="aq">
-                        <a href="#" id="aq1">Browse
-                            Cars</a>
-                        <a href="#" id="aq2">Rent
-                            a Car now</a>
-
-                    </div>
+                <div class="aq">
+                    <a href="#" id="aq1">Browse
+                        Cars</a>
+                    <a href="#" id="aq2">Rent
+                        a Car now</a>
 
                 </div>
-            </center>
-            <!-- car search section  -->
-            <div class="absolute">
+
+            </div>
+        </center>
+        <!-- car search section  -->
+        <div class="absolute">
+            <br>
+            <p>Find your right car</p><br>
+            <div class="input-g">
+                <span class="flag">IND</span>
+                <input type="text" id="vehicle-number" placeholder="Find Car">
+            </div>
+            <br>
+
+            <div class="imn">
+                <img src="suzuki.webp" alt="" width="9%">
+                <img src="hundai.webp" alt="" width="9%">
+                <img src="honda.webp" alt="" width="9%">
+                <img src="tata.webp" alt="" width="9%">
+                <img src="renault.webp" alt="" width="9%">
+                <img src="mahindra.webp" alt="" width="9%">
+                <img src="ford.webp" alt="" width="9%">
+                <img src="kia.webp" alt="" width="9%">
+            </div>
+
+            <button id="findcar">Find Car</button>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- featured car section  -->
+
+    <!-- upcoming cars section  -->
+    <div class="main2">
+        <div class="row ">
+            <div class="upper">
+                <p id="height">Upcoming cars for you</p>
                 <br>
-                <p>Find your right car</p><br>
-                <div class="input-g">
-                    <span class="flag">IND</span>
-                    <input type="text" id="vehicle-number" placeholder="Find Car">
+                <br><br>
+            </div>
+            <div class=" card-box">
+                <div class="card">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-08/photo-2024-08-13-12-43-01-1.jpg?VersionId=lFLd.yO8pAZ2Kz5OTbUNJFgllFQ75lYg&size=750:*"
+                        width="200px" height="220px">
+                    <p id="height">Mahindra Thar ROXX</p>
+                    <a>₹12.99 - 20.49 Lakh*</a>
+                    <center><a href="../secomndary pages/Mahindra/thar_5door.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
                 </div>
+
+                <div class="card">
+                    <img src="https://images.moneycontrol.com/static-mcnews/2022/04/4-tata-curvv.jpg" width="220px"
+                        height="220px">
+                    <p id="height">Tata Curve EV</p>
+                    <a>Not launched</a>
+                    <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Alcazar/new-images/1120x600_2_gallery%20.jpg"
+                        width="220px" height="220px">
+                    <p id="height">Hundai Alcazer</p>
+                    <a>₹16.77 - 21.28 Lakh*</a>
+                    <center><a href="../secomndary pages/Hyundai/creta.html"></a><button type="button">Check available
+                            offers</button>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Sierra/7515/1679985529341/front-left-side-47.jpg?impolicy=resize&imwidth=420"
+                        width="220px" height="220px">
+                    <p id="height">Tata Seirra</p>
+                    <a>Not Launched</a>
+                    <center><a href="../secomndary pages/TATA/safari.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- luxury car section  -->
+
+        <div class="row">
+            <div class="upper">
+                <p id="height">Indulge in Luxury: Featured Cars Just for You</p>
                 <br>
-
-                <div class="imn">
-                    <img src="suzuki.webp" alt="" width="9%">
-                    <img src="hundai.webp" alt="" width="9%">
-                    <img src="honda.webp" alt="" width="9%">
-                    <img src="tata.webp" alt="" width="9%">
-                    <img src="renault.webp" alt="" width="9%">
-                    <img src="mahindra.webp" alt="" width="9%">
-                    <img src="ford.webp" alt="" width="9%">
-                    <img src="kia.webp" alt="" width="9%">
+                <br><br>
+            </div>
+            <div class=" card-box">
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/XUV700/10789/1705388477954/front-left-side-47.jpg?imwidth=890&impolicy=resize"
+                        width="200px" height="220px">
+                    <p id="height">XUV 700</p>
+                    <a>₹15.77 - 26.04 Lakh*</a>
+                    <center><a href="../secomndary pages/Mahindra/xuv700.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
                 </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Harrier/9368/1697532960290/front-left-side-47.jpg?imwidth=890&impolicy=resize"
+                        width="220px" height="220px">
+                    <p id="height">Tata Harrier</p>
+                    <a>₹15.44 - 26.44 Lakh*</a>
+                    <center><a href="../secomndary pages/TATA/harrier.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/10903/1695443447797/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Toyota Fortuner</p>
+                    <a>₹33.43 - 55.44 Lakh*</a>
+                    <center><a href="../secomndary pages/Toyota/Fortuner.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Tucson/10134/1694668706095/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Hundai Tucsun</p>
+                    <a>₹29.02 - 35.94 Lakh*</a>
+                    <center><a href="../secomndary pages/Hyundai/tucson.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
 
-                <button id="findcar">Find Car</button>
+        <!-- SUVs section  -->
 
+        <div class="row">
+            <div class="upper">
+                <p id="height">SUV's</p>
+                <br>
+                <br><br>
+            </div>
+            <div class=" card-box">
+                <div class="card">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/138895/safari-facelift-exterior-right-front-three-quarter-22.jpeg?isig=0&q=80"
+                        width="200px" height="220px">
+                    <p id="height">Tata Safari</p>
+                    <a>₹29.02 - 35.94 Lakh*</a>
+                    <center><a href="../secomndary pages/TATA/safari.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Grand-Vitara/10505/1689588262879/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Maruti Suzuki Grand Vitara</p>
+                    <a>₹11.43 - 20.44 Lakh*</a>
+                    <center><a href="../secomndary pages/Maruti/Grand_Vitara.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Scorpio-N/10817/1690351800434/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Mahindra Scorpio N</p>
+                    <a>₹13.62 - 17.42 Lakh*</a>
+                    <center><a href="../secomndary pages/Mahindra/Scorpio_N.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Bolero/10754/1697696929365/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Mahindra Bolero</p>
+                    <a>₹9.79 - 10.91 Lakh*</a>
+                    <center><a href="../secomndary pages/Mahindra/Bolero.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <!-- electric car section  -->
+        <div class="row">
+            <div class="upper">
+                <p id="height">Electric cars</p>
+                <br>
+                <br><br>
+            </div>
+            <div class=" card-box">
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/11104/1697698470038/front-left-side-47.jpg?tr=w-664"
+                        width="200px" height="220px">
+                    <p id="height">Tata Nexon EV</p>
+                    <a>₹12.49 - 13.75 Lakh*</a>
+                    <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Punch-EV/9484/1704446706447/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Tata Punch EV</p>
+                    <a>₹29.02 - 35.94 Lakh*</a>
+                    <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV400-EV/6820/1662704228567/front-left-side-47.jpg?tr=w-664"
+                        width="220px" height="220px">
+                    <p id="height">Mahindra XUV 400 EV</p>
+                    <a>₹15.49 - 19.39 Lakh*</a>
+                    <center><a href=""><button type="button">Check available offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BYD/Seal/9561/1709635009606/front-left-side-47.jpg?impolicy=resize&imwidth=480"
+                        width="220px" height="220px">
+                    <p id="height">BYD Seal</p>
+                    <a>₹29.02 - 35.94 Lakh*</a>
+                    <center><a href=""><button type="button">Check available offers</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <!-- rentals section  -->
+        <div class="row">
+            <div class="upper">
+                <p id="height">Family cars</p>
+                <br>
+                <br><br>
+            </div>
+            <div class=" card-box">
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1697698611076/front-left-side-47.jpg?tr=w-664"
+                        width="200px" height="220px">
+                    <p id="height">Innova Crysta</p>
+                    <a>₹19.99 - 35.94 Lakh*</a>
+                    <center><a href="../secomndary pages/Toyota/innova_crysta.html"><button type="button">Check
+                                available offers</button></a>
+                    </center>
+
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Hycross/10929/1707376992390/front-left-side-47.jpg?imwidth=420&impolicy=resize"
+                        width="220px" height="220px">
+                    <p id="height">Innova Hycross</p>
+                    <a>₹22.57 - 35.94 Lakh*</a>
+                    <center><a href="../secomndary pages/Toyota/innova_hycross.html"><button type="button">Check
+                                available offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Verna/9744/1694602806760/front-left-side-47.jpg"
+                        width="220px" height="220px">
+                    <p id="height">Verna</p>
+                    <a>₹12.45 - 25.94 Lakh*</a>
+                    <center><a href="../secomndary pages/Hyundai/verna.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+                </div>
+                <div class="card">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Brezza/10388/1694424068944/front-left-side-47.jpg?impolicy=resize&imwidth=280"
+                        width="220px" height="220px">
+                    <p id="height">Breeza</p>
+                    <a>₹9.40 - 16.23 Lakh*</a>
+                    <center><a href="../secomndary pages/Maruti/breeza.html"><button type="button">Check available
+                                offers</button></a>
+                    </center>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- popular brand section  -->
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="suzuki.webp" alt="">
+                <img src="hundai.webp" alt="">
+                <img src="honda.webp" alt="">
+                <img src="tata.webp" alt="">
+                <img src="renault.webp" alt="">
+                <img src="mahindra.webp" alt="">
+                <img src="ford.webp" alt="">
+                <img src="kia.webp" alt="">
+            </div>
+            <div class="logos-slide">
+                <img src="suzuki.webp" alt="">
+                <img src="hundai.webp" alt="">
+                <img src="honda.webp" alt="">
+                <img src="tata.webp" alt="">
+                <img src="renault.webp" alt="">
+                <img src="mahindra.webp" alt="">
+                <img src="ford.webp" alt="">
+                <img src="kia.webp" alt="">
             </div>
         </div>
 
 
-        <!-- featured car section  -->
+    </div>
 
-        <!-- upcoming cars section  -->
-        <div class="main2">
-            <div class="row ">
-                <div class="upper">
-                    <p id="height">Upcoming cars for you</p>
-                    <br>
-                    <br><br>
-                </div>
-                <div class=" card-box">
-                    <div class="card">
-                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-08/photo-2024-08-13-12-43-01-1.jpg?VersionId=lFLd.yO8pAZ2Kz5OTbUNJFgllFQ75lYg&size=750:*"
-                            width="200px" height="220px">
-                        <p id="height">Mahindra Thar ROXX</p>
-                        <a>₹12.99 - 20.49 Lakh*</a>
-                        <center><a href="../secomndary pages/Mahindra/thar_5door.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
 
-                    <div class="card">
-                        <img src="https://images.moneycontrol.com/static-mcnews/2022/04/4-tata-curvv.jpg" width="220px"
-                            height="220px">
-                        <p id="height">Tata Curve EV</p>
-                        <a>Not launched</a>
-                        <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Alcazar/new-images/1120x600_2_gallery%20.jpg"
-                            width="220px" height="220px">
-                        <p id="height">Hundai Alcazer</p>
-                        <a>₹16.77 - 21.28 Lakh*</a>
-                        <center><a href="../secomndary pages/Hyundai/creta.html"></a><button type="button">Check available offers</button>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Sierra/7515/1679985529341/front-left-side-47.jpg?impolicy=resize&imwidth=420"
-                            width="220px" height="220px">
-                        <p id="height">Tata Seirra</p>
-                        <a>Not Launched</a>
-                        <center><a href="../secomndary pages/TATA/safari.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                </div>
+    <!-- why chose us section  -->
+
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="reason">
+                <img src="https://img.icons8.com/doodle/96/000000/medal.png" alt="Quality Service Icon">
+                <h4>Quality Service</h4>
+                <p>We pride ourselves on delivering top-notch service to every customer, ensuring a smooth and
+                    satisfying experience.</p>
+            </div>
+            <div class="reason">
+                <img src="https://img.icons8.com/doodle/96/000000/car--v1.png" alt="Wide Selection Icon">
+                <h4>Wide Selection of Cars</h4>
+                <p>From luxury vehicles to budget-friendly options, we have a diverse range of cars to suit every
+                    need.
+                </p>
+            </div>
+            <div class="reason">
+                <i class="fa-solid fa-credit-card" style="color: #B197FC; font-size: 65px; padding: 20px;"></i>
+                <h4>Affordable Pricing</h4>
+                <p>We offer competitive prices on both sales and rentals, ensuring that you get the best value for
+                    your
+                    money.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- custemer review section  -->
+
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+
+            <!-- Review Card 1 -->
+            <div class="review-card">
+                <img src="data:image/png;base64,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"
+                    alt="Customer Image">
+                <h4>John Doe</h4>
+                <p>"The car rental process was smooth and hassle-free. The staff were very professional, and the car
+                    was
+                    in excellent condition. Highly recommend!"</p>
             </div>
 
-
-            <!-- luxury car section  -->
-
-            <div class="row">
-                <div class="upper">
-                    <p id="height">Indulge in Luxury: Featured Cars Just for You</p>
-                    <br>
-                    <br><br>
-                </div>
-                <div class=" card-box">
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/XUV700/10789/1705388477954/front-left-side-47.jpg?imwidth=890&impolicy=resize"
-                            width="200px" height="220px">
-                        <p id="height">XUV 700</p>
-                        <a>₹15.77 - 26.04 Lakh*</a>
-                        <center><a href="../secomndary pages/Mahindra/xuv700.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Harrier/9368/1697532960290/front-left-side-47.jpg?imwidth=890&impolicy=resize"
-                            width="220px" height="220px">
-                        <p id="height">Tata Harrier</p>
-                        <a>₹15.44 - 26.44 Lakh*</a>
-                        <center><a href="../secomndary pages/TATA/harrier.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/10903/1695443447797/front-left-side-47.jpg?tr=w-664"
-                            width="220px" height="220px">
-                        <p id="height">Toyota Fortuner</p>
-                        <a>₹33.43 - 55.44 Lakh*</a>
-                        <center><a href="../secomndary pages/Toyota/Fortuner.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Tucson/10134/1694668706095/front-left-side-47.jpg?tr=w-664"
-                            width="220px" height="220px">
-                        <p id="height">Hundai Tucsun</p>
-                        <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><a href="../secomndary pages/Hyundai/tucson.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                </div>
+            <!-- Review Card 2 -->
+            <div class="review-card">
+                <img src="data:image/png;base64,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"
+                    alt="Customer Image">
+                <h4>Jane Smith</h4>
+                <p>"I purchased my car from this dealership, and the experience was fantastic. They offered great
+                    deals
+                    and ensured I got exactly what I was looking for."</p>
             </div>
 
-            <!-- SUVs section  -->
-
-            <div class="row">
-                <div class="upper">
-                    <p id="height">SUV's</p>
-                    <br>
-                    <br><br>
-                </div>
-                <div class=" card-box">
-                    <div class="card">
-                        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/138895/safari-facelift-exterior-right-front-three-quarter-22.jpeg?isig=0&q=80"
-                            width="200px" height="220px">
-                        <p id="height">Tata Safari</p>
-                        <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><a href="../secomndary pages/TATA/safari.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Grand-Vitara/10505/1689588262879/front-left-side-47.jpg?tr=w-664"
-                            width="220px" height="220px">
-                        <p id="height">Maruti Suzuki Grand Vitara</p>
-                        <a>₹11.43 - 20.44 Lakh*</a>
-                        <center><a href="../secomndary pages/Maruti/Grand_Vitara.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Scorpio-N/10817/1690351800434/front-left-side-47.jpg?tr=w-664"
-                            width="220px" height="220px">
-                        <p id="height">Mahindra Scorpio N</p>
-                        <a>₹13.62 - 17.42 Lakh*</a>
-                        <center><a href="../secomndary pages/Mahindra/Scorpio_N.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Bolero/10754/1697696929365/front-left-side-47.jpg?tr=w-664" width="220px"
-                            height="220px">
-                        <p id="height">Mahindra Bolero</p>
-                        <a>₹9.79 - 10.91 Lakh*</a>
-                        <center><a href="../secomndary pages/Mahindra/Bolero.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-
-            <!-- electric car section  -->
-            <div class="row">
-                <div class="upper">
-                    <p id="height">Electric cars</p>
-                    <br>
-                    <br><br>
-                </div>
-                <div class=" card-box">
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Nexon/11104/1697698470038/front-left-side-47.jpg?tr=w-664"
-                            width="200px" height="220px">
-                        <p id="height">Tata Nexon EV</p>
-                        <a>₹12.49 - 13.75 Lakh*</a>
-                        <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Punch-EV/9484/1704446706447/front-left-side-47.jpg?tr=w-664"
-                            width="220px" height="220px">
-                        <p id="height">Tata Punch EV</p>
-                        <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><a href="../secomndary pages/TATA/punch.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV400-EV/6820/1662704228567/front-left-side-47.jpg?tr=w-664"
-                            width="220px" height="220px">
-                        <p id="height">Mahindra XUV 400 EV</p>
-                        <a>₹15.49 - 19.39 Lakh*</a>
-                        <center><a href=""><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BYD/Seal/9561/1709635009606/front-left-side-47.jpg?impolicy=resize&imwidth=480"
-                            width="220px" height="220px">
-                        <p id="height">BYD Seal</p>
-                        <a>₹29.02 - 35.94 Lakh*</a>
-                        <center><a href=""><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-
-            <!-- rentals section  -->
-            <div class="row">
-                <div class="upper">
-                    <p id="height">Family cars</p>
-                    <br>
-                    <br><br>
-                </div>
-                <div class=" card-box">
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1697698611076/front-left-side-47.jpg?tr=w-664" width="200px" height="220px">
-                        <p id="height">Innova Crysta</p>
-                        <a>₹19.99 - 35.94 Lakh*</a>
-                        <center><a href="../secomndary pages/Toyota/innova_crysta.html"><button type="button">Check available offers</button></a>
-                        </center>
-
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Hycross/10929/1707376992390/front-left-side-47.jpg?imwidth=420&impolicy=resize" width="220px" height="220px">
-                        <p id="height">Innova Hycross</p>
-                        <a>₹22.57 - 35.94 Lakh*</a>
-                        <center><a href="../secomndary pages/Toyota/innova_hycross.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Verna/9744/1694602806760/front-left-side-47.jpg" width="220px" height="220px">
-                        <p id="height">Verna</p>
-                        <a>₹12.45 - 25.94 Lakh*</a>
-                        <center><a href="../secomndary pages/Hyundai/verna.html"><button type="button">Check available offers</button></a>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Brezza/10388/1694424068944/front-left-side-47.jpg?impolicy=resize&imwidth=280" width="220px" height="220px">
-                        <p id="height">Breeza</p>
-                        <a>₹9.40 - 16.23 Lakh*</a>
-                        <center><a href="../secomndary pages/Maruti/breeza.html"><button type="button">Check available offers</button></a>
-                        </center>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- popular brand section  -->
-
-            <div class="row1">
-                <div class="upper1">
-                    <p id="height">Popular brands</p>
-                    <br>
-                    <br><br>
-                </div>
-                <div class=" card-box1">
-                    <div class="card1">
-                        <img src="mahindra.webp" width="100%"><br>
-                        <center>
-                            <p id="height">Mahindra</p>
-                        </center>
-                    </div>
-                    <div class="card1">
-                        <img src="honda.webp" width="100%"><br>
-                        <center>
-                            <p id="height">Honda</p>
-                        </center>
-                    </div>
-                    <div class="card1">
-                        <img src="kia.webp" width="100%"><br>
-                        <center>
-                            <p id="height">Kia</p>
-                        </center>
-                    </div>
-                    <div class="card1">
-                        <img src="tata.webp" width="100%"><br>
-                        <center>
-                            <p id="height">Tata Motors</p>
-                        </center>
-                    </div>
-                    <div class="card1">
-                        <img src="renault.webp" width="100%"><br>
-                        <center>
-                            <p id="height">Renoult</p>
-                        </center>
-                    </div>
-                </div>
+            <!-- Review Card 3 -->
+            <div class="review-card">
+                <img src="data:image/png;base64,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"
+                    alt="Customer Image">
+                <h4>Michael Lee</h4>
+                <p>"Top-notch service! The variety of cars available made it easy to find the perfect fit for my
+                    needs.
+                    I'll definitely be returning for my next purchase."</p>
             </div>
 
         </div>
+    </section>
 
 
-        <!-- why chose us section  -->
 
-        <section class="why-choose-us">
-            <div class="container">
-                <h2>Why Choose Us?</h2>
-                <div class="reason">
-                    <img src="https://img.icons8.com/doodle/96/000000/medal.png" alt="Quality Service Icon">
-                    <h4>Quality Service</h4>
-                    <p>We pride ourselves on delivering top-notch service to every customer, ensuring a smooth and
-                        satisfying experience.</p>
-                </div>
-                <div class="reason">
-                    <img src="https://img.icons8.com/doodle/96/000000/car--v1.png" alt="Wide Selection Icon">
-                    <h4>Wide Selection of Cars</h4>
-                    <p>From luxury vehicles to budget-friendly options, we have a diverse range of cars to suit every
-                        need.
-                    </p>
-                </div>
-                <div class="reason">
-                    <i class="fa-solid fa-credit-card" style="color: #B197FC; font-size: 65px; padding: 20px;"></i>
-                    <h4>Affordable Pricing</h4>
-                    <p>We offer competitive prices on both sales and rentals, ensuring that you get the best value for
-                        your
-                        money.</p>
-                </div>
+    <!-- promotional section -->
+
+    <section class="special-offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+
+            <!-- Offer Card 1 -->
+            <div class="offer-card">
+                <div class="offer-badge">Limited Time Offer!</div>
+                <img src="tata.webp" alt="Special Offer Image">
+                <h4>30% Off on All Rentals</h4>
+                <p>Get an exclusive 30% discount on all car rentals. This offer is valid only for this month. Book
+                    your
+                    car today!</p>
+                <a href="#">Get Offer</a>
             </div>
-        </section>
 
-
-        <!-- custemer review section  -->
-
-        <section class="customer-reviews">
-            <div class="container">
-                <h2>What Our Customers Say</h2>
-
-                <!-- Review Card 1 -->
-                <div class="review-card">
-                    <img src="data:image/png;base64,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"
-                        alt="Customer Image">
-                    <h4>John Doe</h4>
-                    <p>"The car rental process was smooth and hassle-free. The staff were very professional, and the car
-                        was
-                        in excellent condition. Highly recommend!"</p>
-                </div>
-
-                <!-- Review Card 2 -->
-                <div class="review-card">
-                    <img src="data:image/png;base64,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"
-                        alt="Customer Image">
-                    <h4>Jane Smith</h4>
-                    <p>"I purchased my car from this dealership, and the experience was fantastic. They offered great
-                        deals
-                        and ensured I got exactly what I was looking for."</p>
-                </div>
-
-                <!-- Review Card 3 -->
-                <div class="review-card">
-                    <img src="data:image/png;base64,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"
-                        alt="Customer Image">
-                    <h4>Michael Lee</h4>
-                    <p>"Top-notch service! The variety of cars available made it easy to find the perfect fit for my
-                        needs.
-                        I'll definitely be returning for my next purchase."</p>
-                </div>
-
+            <!-- Offer Card 2 -->
+            <div class="offer-card">
+                <div class="offer-badge">Exclusive Offer!</div>
+                <img src="renault.webp" alt="Special Offer Image">
+                <h4>Free Maintenance for 1yr</h4>
+                <p>Buy any certified pre-owned car and enjoy a full year of free maintenance. Drive with confidence,
+                    knowing we have you covered.</p>
+                <a href="#">Claim Offer</a>
             </div>
-        </section>
 
 
 
-        <!-- promotional section -->
+            <!-- Offer Card 3 -->
+            <div class="offer-card">
+                <div class="offer-badge">Hot Deal!</div>
+                <img src="mahindra.webp" alt="Special Offer Image">
+                <h4>Buy 1 Get 1 Free</h4>
+                <p>Purchase any luxury car and get your next rental free! A deal too good to pass up, available for
+                    a
+                    limited time.</p>
+                <a href="#">Grab This Deal</a>
+            </div>
 
-        <section class="special-offers">
-            <div class="container">
-                <h2>Special Offers</h2>
-
-                <!-- Offer Card 1 -->
-                <div class="offer-card">
-                    <div class="offer-badge">Limited Time Offer!</div>
-                    <img src="tata.webp" alt="Special Offer Image">
-                    <h4>30% Off on All Rentals</h4>
-                    <p>Get an exclusive 30% discount on all car rentals. This offer is valid only for this month. Book
-                        your
-                        car today!</p>
-                    <a href="#">Get Offer</a>
-                </div>
-
-                <!-- Offer Card 2 -->
-                <div class="offer-card">
-                    <div class="offer-badge">Exclusive Offer!</div>
-                    <img src="renault.webp" alt="Special Offer Image">
-                    <h4>Free Maintenance for 1yr</h4>
-                    <p>Buy any certified pre-owned car and enjoy a full year of free maintenance. Drive with confidence,
-                        knowing we have you covered.</p>
-                    <a href="#">Claim Offer</a>
-                </div>
+        </div>
+    </section>
 
 
 
-                <!-- Offer Card 3 -->
-                <div class="offer-card">
-                    <div class="offer-badge">Hot Deal!</div>
-                    <img src="mahindra.webp" alt="Special Offer Image">
-                    <h4>Buy 1 Get 1 Free</h4>
-                    <p>Purchase any luxury car and get your next rental free! A deal too good to pass up, available for
-                        a
-                        limited time.</p>
-                    <a href="#">Grab This Deal</a>
-                </div>
+    <!-- footer -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div>
+                <h4>About Us</h4>
+                <p>We provide the best car sales and rental services in the region.<br> With a wide range of
+                    vehicles
+                    and
+                    great deals,<br> we ensure a hassle-free experience.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../main page/mainpage.html">Home</a></li>
+                    <li><a href="#">Featured Cars</a></li>
+                    <li><a href="../car_rental_page/Car_rental_services.html">Rentals</a></li>
+                    <li><a href="../contact_us/contact_us.html">Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> support@CarWebsite.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Location:</strong> 123 Main St, Cityville, USA</p>
 
             </div>
-        </section>
-
-
-
-        <!-- footer -->
-
-        <footer class="footer">
-
-            <div class="footer-container">
-                <div>
-                    <h4>About Us</h4>
-                    <p>We provide the best car sales and rental services in the region.<br> With a wide range of
-                        vehicles
-                        and
-                        great deals,<br> we ensure a hassle-free experience.</p>
-                </div>
-
-                <div>
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Featured Cars</a></li>
-                        <li><a href="#">Rentals</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-
-                <div class="contact-info">
-                    <h4>Contact Us</h4>
-                    <p><strong>Email:</strong> support@CarWebsite.com</p>
-                    <p><strong>Phone:</strong> +1 234 567 890</p>
-                    <p><strong>Location:</strong> 123 Main St, Cityville, USA</p>
-
-                </div>
-                <!-- <img id="imb" src="https://assets.cars24.com/production/c2b-website/240824145732/js/e7650cba1f79d817e97e45684ce20b2d.svg" alt="">
+            <!-- <img id="imb" src="https://assets.cars24.com/production/c2b-website/240824145732/js/e7650cba1f79d817e97e45684ce20b2d.svg" alt="">
          -->
 
-            </div>
-            <br><br>
-            <div class="social-icons" style="text-align:center; margin-top: 20px;">
-                <a href="#"><i class="fa-brands fa-facebook" style="color: #bfbfbf;"></i> Facebook</a>
-                <a href="#"><i class="fa-brands fa-twitter" style="color: #bfbfbf;"></i> Twitter</a>
-                <a href="#"><i class="fa-brands fa-instagram" style="color: #bfbfbf;"></i> Instagram</a>
-            </div>
+        </div>
+        <br><br>
+        <div class="social-icons" style="text-align:center; margin-top: 20px;">
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #bfbfbf;"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #bfbfbf;"></i> Twitter</a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #bfbfbf;"></i> Instagram</a>
+        </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2024 CarSalesAndRentals. All Rights Reserved.</p>
-            </div>
-        </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CarSalesAndRentals. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
 </body>
+<script src="mainpage.js"></script>
 
 </html>

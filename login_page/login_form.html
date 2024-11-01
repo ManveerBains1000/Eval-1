@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login-form">
+            <h1>Sign Up</h1>
+            <div class="underline"></div>
+            <div class="input-group">
+                <div class="input-field username-field">
+                    <label for="user-name">User Name</label> <br>
+                    <input type="text" name="user-name" id="input-username" required placeholder="Enter your User Name">
+                    <span class="error" style="display:none;">Invalid Input</span>
+                </div>
+                <div class="input-field">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="input-email" required placeholder="Enter your email">
+                    <span class="error" style="display:none;">Invalid Input</span>
+                </div>
+                <div class="input-field">
+                    <label for="pass">Password</label> <br>
+                    <input type="text" name="pass" id="input-pass" required placeholder="Enter password">
+                    <span class="error" style="display:none;">Invalid Input</span>
+                </div>
+                <div class="input-field">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember" id="forget-pass">Remember Me</label>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button type="button" id="signup-btn">Sign Up</button>
+                <button type="button" id="signin-btn">Sign In</button>
+            </div>
+            <div class="line-break">
+                <div class="left"></div>
+                <div class="text">Or</div>
+                <div class="right"></div>
+            </div>
+            <div class="other">
+                <div class="google-login other-options">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="facebook-login other-options">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="microsoft-account other-options">
+                    <i class="fa-brands fa-microsoft"></i>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="login_form.js"></script>
+</body>
+</html>
+
+
+</html>
